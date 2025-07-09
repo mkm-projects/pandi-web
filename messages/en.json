@@ -1,6 +1,15 @@
 {
   "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+    "HeroSection": {
+      "title": "Your Trusted Destination for Quality Spare Parts",
+      "title1": "Your",
+      "title2": "Trusted",
+      "title3": "Destination For",
+      "title4": "Quality",
+      "title5": "Spare Parts",
+      "description": "Discover a wide selection of OEM and aftermarket parts for all vehicle types. Genuine quality, competitive prices, and reliable performance guaranteed. Shop with confidence and keep your ride running smoothly.",
+      "callAction1": "Book Now",
+      "callAction2": "Explore Parts"
+    }
   }
 }

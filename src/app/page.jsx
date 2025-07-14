@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import { AboutPage } from "./about/page";
 // import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="grid">
 
       <HeroSection />
+      <AboutPage />
       {/* <h2 className="text-primary">
         {t('title')}
       </h2>

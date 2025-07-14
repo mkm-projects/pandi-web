@@ -11,5 +11,13 @@
       "callAction1": "Book Now",
       "callAction2": "Explore Parts"
     }
+  },
+  "Header": {
+    "MenuNames": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "products": "Products",
+      "contact": "Contact"
+    }
   }
 }

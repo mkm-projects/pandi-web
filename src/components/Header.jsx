@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/select";
 import { setUserLocale } from "@/services/locale";
 import { Call, Menu } from "iconsax-reactjs";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -23,6 +23,8 @@ export default function Header() {
     setLocale(value);
     setUserLocale(value); // Update the locale in cookies or any storage
   };
+
+    const t = useTranslations('Header.MenuNames');
 
   return (
     <header className="bg-white shadow-sm w-full sticky top-0 z-50">
@@ -41,23 +43,23 @@ export default function Header() {
         <div className="flex items-center gap-14">
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-[#D5202C] font-semibold">
-              Home
+            <Link href="/" className="text-primary font-semibold">
+              {t("home")}
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-[#D5202C]">
-              About Us
+            <Link href="/about" className="text-gray-700 hover:text-primary">
+              {t("aboutUs")}
             </Link>
             <Link
               href="/products"
               className="text-gray-700 hover:text-[#D5202C]"
             >
-              Products
+              {t("products")}
             </Link>
             <Link
               href="/contact"
               className="text-gray-700 hover:text-[#D5202C]"
             >
-              Contact
+              {t("contact")}
             </Link>
           </nav>
 
@@ -80,7 +82,7 @@ export default function Header() {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="en">English</SelectItem>
-                  <SelectItem value="fr">Français</SelectItem>
+                  {/* <SelectItem value="fr">Français</SelectItem> */}
                   <SelectItem value="ar">Arabic</SelectItem>
                 </SelectContent>
               </Select>

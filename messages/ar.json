@@ -11,5 +11,13 @@
       "callAction1": "احجز الآن",
       "callAction2": "استكشف القطع"
     }
+  },
+  "Header": {
+    "MenuNames": {
+      "home": "الرئيسية",
+      "aboutUs": "من نحن",
+      "products": "المنتجات",
+      "contact": "اتصل بنا"
+    }
   }
 }

@@ -1,0 +1,43 @@
+{
+  "HomePage": {
+    "HeroSection": {
+      "title": "Your Trusted Destination for Quality Spare Parts",
+      "title1": "Your",
+      "title2": "Trusted",
+      "title3": "Destination For",
+      "title4": "Quality",
+      "title5": "Spare Parts",
+      "description": "Discover a wide selection of OEM and aftermarket parts for all vehicle types. Genuine quality, competitive prices, and reliable performance guaranteed. Shop with confidence and keep your ride running smoothly.",
+      "callAction1": "Book Now",
+      "callAction2": "Explore Parts"
+    }
+  },
+  "Header": {
+    "MenuNames": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "products": "Products",
+      "contact": "Contact"
+    }
+  },
+  "About": {
+    "HomeAbout": {
+      "counts": {
+        "yearsOfExperience": "Years Of Experience",
+        "orderServedSuccess": "Order Served Success",
+        "satisfiedCustomers": "Satisfied Customers"
+      },
+      "about": "About",
+      "us": "Us",
+      "p1": "At Pandi Auto Spare, we specialize in providing high-quality spare parts for cars. Whether you're a vehicle owner, mechanic, or retailer, we ensure access to a wide range of OEM and premium aftermarket parts that meet industry standards.",
+      "p2": "With a focus on genuine quality, competitive pricing, and fast delivery, our goal is to keep your vehicles running safely and smoothly. From engines to accessories, our inventory is backed by expert support and a commitment to customer satisfaction.",
+      "callAction": "Read More",
+      "icons": {
+        "parts": "Affordable Auto Parts",
+        "brand": "Top Brands",
+        "quality": "Trusted Quality",
+        "delivery": "Secure Delivery"
+      }
+    }
+  }
+}

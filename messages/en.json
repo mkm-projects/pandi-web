@@ -39,5 +39,23 @@
         "delivery": "Secure Delivery"
       }
     }
+  },
+  "Product": {
+    "HomeProduct": {
+      "explore": "Explore Our",
+      "products": "Products",
+      "p1": "Browse our wide range of high-quality spare parts designed to fit perfectly and perform reliably. Whether you’re upgrading, replacing, or repairing — we’ve got the right part for you.",
+      "parts": {
+        "parts": "Engine Parts",
+        "disks": "Brake & Disks",
+        "electronic": "Electronic Parts",
+        "light": "Light Parts",
+        "oil": "Oil & Lubrication",
+        "bodyParts": "Body Parts"
+      },
+      "everything": "Everything Your Vehicle Needs",
+      "all": "All In One",
+      "place": "Place"
+    }
   }
 }

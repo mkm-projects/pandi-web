@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import { AboutPage } from "./about/page";
+import { ProductPage } from "./product/page";
 // import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
 
       <HeroSection />
       <AboutPage />
+      <ProductPage />
       {/* <h2 className="text-primary">
         {t('title')}
       </h2>

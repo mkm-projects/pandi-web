@@ -45,10 +45,10 @@ export function ProductPage() {
         <div className="absolute inset-0 bg-[#17181C]/70" />
 
         <div className="relative z-10 px-4 py-6 rounded text-white">
-          <h2 className="font-bold text-[57.5px] leading-[100%] capitalize">
+          <h2 className="font-bold text-[36px] sm:text-[48px] md:text-[57.5px] leading-[100%] capitalize">
             {t("everything")}
           </h2>
-          <h3 className="font-bold text-[57.5px] leading-[100%] capitalize mt-6">
+          <h3 className="font-bold text-[36px] sm:text-[48px] md:text-[57.5px] leading-[100%] capitalize mt-6">
             {t("all")} <span className="text-primary"> {t("place")}</span>
           </h3>
         </div>

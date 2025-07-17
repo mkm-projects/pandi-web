@@ -57,5 +57,12 @@
       "all": "All In One",
       "place": "Place"
     }
+  },
+  "Brand": {
+    "HomeBrand": {
+      "brand": "Brands We",
+      "trus": "Trust",
+      "p1": "Browse our wide range of high-quality spare parts designed to fit perfectly and perform reliably. Whether you’re upgrading, replacing, or repairing — we’ve got the right part for you"
+    }
   }
 }

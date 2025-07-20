@@ -93,7 +93,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <footer className="bg-white border-t p-4 text-center">
+      <footer className="bg-white border-t p-2 md:p-4 text-center">
         <p className="text-[#4C4C4C] !font-extralight text-[0.6rem] sm:text-[0.9rem]">
           &copy; All Rights Reserved | Designed And Developed By MKM Solutions
         </p>

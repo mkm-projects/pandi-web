@@ -14,6 +14,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Header() {
+  const [showNumber, setShowNumber] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const locale = useLocale();
 
@@ -24,7 +25,7 @@ export default function Header() {
     setUserLocale(value); // Update the locale in cookies or any storage
   };
 
-    const t = useTranslations('Header.MenuNames');
+  const t = useTranslations("Header.MenuNames");
 
   return (
     <header className="bg-white shadow-sm w-full sticky top-0 z-50">
@@ -49,34 +50,42 @@ export default function Header() {
             <Link href="/about" className="text-gray-700 hover:text-primary">
               {t("aboutUs")}
             </Link>
-            <Link
-              href="/products"
-              className="text-gray-700 hover:text-[#D5202C]"
-            >
+            <Link href="/products" className="text-gray-700 hover:text-primary">
               {t("products")}
             </Link>
-            <Link
-              href="/contact"
-              className="text-gray-700 hover:text-[#D5202C]"
-            >
+            <Link href="/contact" className="text-gray-700 hover:text-primary">
               {t("contact")}
             </Link>
           </nav>
 
           {/* Right Side (Call & Menu) */}
-          <div className="flex items-center gap-4">
-            <div className="bg-red-600 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium whitespace-nowrap">
+          <div className="flex items-center gap-2 md:gap-4">
+            {/* <div className="bg-primary text-white px-2 sm:px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium whitespace-nowrap">
               <Call size="18" color="#FFFF" />
-              +91 8606449640
+              <span className="hidden sm:block">+91 8606449640</span>
+            </div> */}
+            <div
+              className={`bg-primary text-white px-2 sm:px-4 py-2 rounded-full flex items-center text-sm font-medium whitespace-nowrap cursor-pointer ${showNumber ? 'gap-2' : 'gap-0.5'}`}
+              onClick={() => setShowNumber((prev) => !prev)}
+            >
+              <Call size="18" color="#FFF" />
+
+              <span
+                className={`sm:hidden overflow-hidden transition-all duration-300 ${
+                  showNumber
+                    ? "max-w-[200px] opacity-100"
+                    : "max-w-0 opacity-0"
+                }`}
+              >
+                +91 8606449640
+              </span>
+
+              <span className="hidden sm:block">+91 8606449640</span>
             </div>
 
             {/* Language Selector */}
-            <div className="relative">
-              <Select
-                value={userLocale}
-                onValueChange={handleLocaleChange}
-                className="w-[180px]"
-              >
+            <div className="relative hidden sm:block">
+              <Select value={userLocale} onValueChange={handleLocaleChange}>
                 <SelectTrigger className="w-[180px]">
                   <SelectValue placeholder="Language" />
                 </SelectTrigger>
@@ -105,7 +114,7 @@ export default function Header() {
           <Link
             href="/"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block text-[#D5202C] font-semibold"
+            className="block text-[#D5202C] font-semibold mt-3"
           >
             Home
           </Link>
@@ -130,6 +139,19 @@ export default function Header() {
           >
             Contact
           </Link>
+
+          <div className="relative">
+            <Select value={userLocale} onValueChange={handleLocaleChange}>
+              <SelectTrigger className="w-full">
+                <SelectValue placeholder="Language" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="en">English</SelectItem>
+                {/* <SelectItem value="fr">Français</SelectItem> */}
+                <SelectItem value="ar">Arabic</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
         </div>
       )}
     </header>

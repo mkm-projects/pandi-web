@@ -10,15 +10,15 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen bg-black text-white flex items-center justify-start overflow-hidden">
       {/* Left Content */}
-      <div className="relative z-10 w-full md:w-1/2 px-4 sm:px-6 md:px-20 py-20 sm:py-24">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+      <div className="relative z-10 w-full md:w-1/2 px-4 sm:px-6 md:px-20 py-15 sm:py-24">
+        <h1 className="text-[30px] sm:text-[40px] md:text-[57.5px] font-bold leading-tight">
           {t('title1')} <span className="text-primary">{t('title2')}</span>
           <br />
           {t('title3')} <span className="text-primary">{t('title4')}</span>
           <br />
           {t('title5')}
         </h1>
-        <p className="text-white font-light text-lg sm:text-xl md:text-lg mt-6 max-w-xl">
+        <p className="text-white font-light text-[14px] sm:text-[16px] leading-[30px] sm:leading-[34.5px] capitalize mt-6 max-w-xl">
           {t('description')}
         </p>
 

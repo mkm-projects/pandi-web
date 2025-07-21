@@ -41,7 +41,7 @@ export default function Footer() {
                 className="w-44 mb-4"
               />
 
-              <div className="space-y-3 font-roboto font-light text-[20px] leading-9 tracking-normal mt-8">
+              <div className="space-y-3 font-roboto font-light text-[14px] sm:text-[16px] md:text-[20px] leading-9 tracking-normal mt-8">
                 <p className="flex items-center gap-6">
                   <Location size="20" variant="Outline" />
                   Enter Your Location

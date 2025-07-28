@@ -1,13 +1,12 @@
 "use client";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Button } from "./ui/button";
 
 export default function HeroSection() {
   const t = useTranslations("HomePage.HeroSection");
 
   return (
-    <section className="relative  bg-black text-white flex items-center justify-start overflow-hidden py-22 sm:py-18 md:14">
+    <section className="relative bg-black text-white flex items-center justify-start overflow-hidden py-22 sm:py-18 md:14">
       {/* Left Content */}
       <div className="relative z-10 w-full md:w-1/2 px-4 sm:px-6 md:px-20 py-15 sm:py-24">
         <h1 className="text-[30px] sm:text-[40px] md:text-[57.5px] font-bold leading-tight">

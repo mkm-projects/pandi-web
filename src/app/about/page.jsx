@@ -41,7 +41,7 @@ export function AboutPage() {
         </button>
       </div>
 
-      <div className="bg-primary text-white mt-10 sm:mt-16 py-6 sm:py-10">
+      <div className="bg-primary text-white mt-10 sm:mt-16 py-6 sm:py-10 pl-3 sm:pl-3 md:pl-0">
         <div className="max-w-4xl mx-auto grid grid-cols-4 gap-2 px-4">
           <div className="flex flex-col items-center">
             <img

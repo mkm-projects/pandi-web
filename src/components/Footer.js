@@ -29,12 +29,12 @@ export default function Footer() {
   return (
     <>
       <div
-        className="text-white  py-8 bg-cover bg-center w-full h-full"
+        className="text-white  py-4 sm:py-4 md:py-8 bg-cover bg-center w-full h-full"
         style={{ backgroundImage: "url('/images/heroSection.png')" }}
       >
         <div className="relative z-10 p-1 sm:p-2 md:p-6">
-          <div className="px-6 sm:px-8 mx-auto flex flex-col md:flex-row justify-between gap-8">
-            <div className="flex-1 mt-5">
+          <div className="px-2 sm:px-8 mx-auto flex flex-col md:flex-row justify-between gap-8">
+            <div className="flex-1 mt-5 px-4">
               <img
                 src="/images/logo.png"
                 alt="Pandi Auto Spares"

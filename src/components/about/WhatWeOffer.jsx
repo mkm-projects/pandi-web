@@ -34,28 +34,28 @@ const offerList = [
 
 export function WhatWeOffer() {
   return (
-    <section className="bg-black text-white">
+    <section className="text-white">
       {/* Header with background image */}
       <div
-        className="bg-cover bg-center py-10 md:py-14 text-center"
+        className="bg-cover bg-center py-10 md:py-14 text-center bg-primary"
         style={{
           backgroundImage: "url('/images/offer-bg.png')", // replace with your path
         }}
       >
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-          What <span className="text-primary">We Offer</span>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary">
+          What <span className="text-white">We Offer</span>
         </h2>
       </div>
 
       {/* Card Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-6 max-w-6xl mx-auto py-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-8xl mx-auto py-20">
         {offerList.map((item, index) => (
           <div
             key={index}
-            className="bg-white text-gray-900 rounded-xl shadow-md p-6 transition hover:shadow-xl"
+            className="bg-card-custom-1 text-gray-900 rounded-xl py-10 px-6 transition"
           >
-            <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-            <p className="text-sm leading-relaxed text-gray-600">
+            <h3 className="text-2xl font-bold mb-2 text-secondary">{item.title}</h3>
+            <p className="text-lg font-light leading-relaxed text-text-color">
               {item.description}
             </p>
           </div>

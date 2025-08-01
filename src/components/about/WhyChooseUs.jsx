@@ -10,9 +10,9 @@ const reasons = [
 export function WhyChooseUs() {
   return (
     <section className="bg-white py-10 md:py-20">
-     <div className="flex justify-center max-w-7xl mx-auto items-center">
+     <div className="flex justify-between max-w-8xl mx-auto items-center">
          {/* Left content */}
-      <div className="w-full lg:w-1/2 p-6 md:p-10">
+      <div className="w-full lg:w-1/2">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
           Why <span className="text-red-600">Choose Us?</span>
         </h2>
@@ -34,7 +34,7 @@ export function WhyChooseUs() {
       </div>
 
       {/* Right image */}
-      <div className="relative w-full h-72 md:h-[380px] hidden lg:block md:w-1/2">
+      <div className="relative w-full h-[300px] md:h-[450px] hidden lg:block md:w-3/4">
         <Image
           src="/images/about-engine-parts.png" // Replace with your actual path or use imported image
           alt="Engine Spare Part"

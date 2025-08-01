@@ -32,7 +32,7 @@ export default async function RootLayout({ children }) {
           <NextIntlClientProvider locale={locale}>
             <Header />
             {children}
-            <Footer />
+            <Footer  />
           </NextIntlClientProvider>
         </div>
       </body>

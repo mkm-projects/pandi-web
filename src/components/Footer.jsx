@@ -1,11 +1,11 @@
 import {
-  Sms,
   Call,
-  Youtube,
-  Location,
-  Whatsapp,
   Facebook,
   Instagram,
+  Location,
+  Sms,
+  Whatsapp,
+  Youtube,
 } from "iconsax-reactjs";
 
 export default function Footer() {
@@ -28,13 +28,10 @@ export default function Footer() {
 
   return (
     <>
-      <div
-        className="text-white  py-4 sm:py-4 md:py-8 bg-cover bg-center w-full h-full"
-        style={{ backgroundImage: "url('/images/heroSection.png')" }}
-      >
-        <div className="relative z-10 p-1 sm:p-2 md:p-6">
-          <div className="px-2 sm:px-8 mx-auto flex flex-col md:flex-row justify-between gap-8">
-            <div className="flex-1 mt-5 px-4">
+      <div className="text-white bg-cover bg-center w-full h-full overflow-hidden bg-secondary">
+        <div className="relative z-10">
+          <div className="flex flex-col md:flex-row justify-between gap-8 relative">
+            <div className="flex-1 mt-5 px-28 py-20 z-10">
               <img
                 src="/images/logo.png"
                 alt="Pandi Auto Spares"
@@ -80,15 +77,24 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="flex-1 min-w-[300px] rounded-xl overflow-hidden">
+            <div className="flex relative">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62662.18950647047!2d76.10954598111691!3d11.009574826737895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cc54481b4493%3A0x26f77eae08f52b41!2sPandi%20Auto%20Spares!5e0!3m2!1sen!2sin!4v1753016755766!5m2!1sen!2sin"
-                className="w-full h-[180px] sm:h-[250px] md:h-[380px] border-0"
+                className="w-full h-[80%] border-0 absolute top-1/2 transform -translate-y-1/2 right-10 z-20 rounded-lg"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
+
+              <div className="relative overflow-hidden h-full w-full">
+                <img
+                  src="/images/footer_img.png"
+                  alt="Car Background"
+                  className="w-full h-full object-cover scale-150 -translate-x-44 translate-y-24 filter brightness-50"
+                  
+                />
+              </div>
             </div>
           </div>
         </div>

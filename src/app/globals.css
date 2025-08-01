@@ -39,6 +39,14 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --card-custom-1: hsla(0, 0%, 96%, 1);
+  --text-color: hsla(0, 0%, 30%, 1);
+
+  /* font sizes */
+  --container-8xl: 88rem;
+  --container-9xl: 96rem;
+  --container-10xl: 104rem;
 }
 
 @theme inline {
@@ -81,6 +89,14 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  --color-card-custom-1: var(--card-custom-1);
+  --color-text-color: var(--text-color);
+
+  /* font sizes */
+  --container-8xl: var(--container-8xl);
+  --container-9xl: var(--container-9xl);
+  --container-10xl: var(--container-10xl);
 }
 
 .dark {

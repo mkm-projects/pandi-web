@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-sm w-full sticky top-0 z-50">
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-10 py-4 flex items-center justify-between">
+      <div className="mx-auto w-full px-4 sm:px-6 lg:px-14 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
           <Image

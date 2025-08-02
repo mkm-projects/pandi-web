@@ -46,9 +46,9 @@ export function WhatWeOffer() {
           alt="Offer spare part"
           width={200}
           height={200}
-          className="translate-y-3"
+          className="translate-y-3 h-[100px] w-[100px] lg:h-[100px] lg:w-auto"
         />
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary w-full">
+        <h2 className="text-3xl sm:text-4xl font-bold text-secondary w-full">
           What <span className="text-white">We Offer</span>
         </h2>
          <Image
@@ -56,13 +56,13 @@ export function WhatWeOffer() {
           alt="Offer spare part"
           width={200}
           height={200}
-          className="-translate-y-3"
+          className="-translate-y-3 h-[100px] w-[100px] lg:h-[100px] lg:w-auto"
         />
         </div>
       </div>
 
       {/* Card Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-8xl mx-auto py-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-8xl mx-auto py-10 px-8 sm:px-10">
         {offerList.map((item, index) => (
           <div
             key={index}

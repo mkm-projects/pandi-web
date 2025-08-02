@@ -26,7 +26,6 @@ export default function ProductPage() {
               <Image
                 src={item.image}
                 alt={tr(item.key)}
-                layout="fill"
                 objectFit="contain"
               />
             </div>

@@ -10,14 +10,14 @@ const reasons = [
 export function WhyChooseUs() {
   return (
     <section className="bg-white py-10 md:py-20">
-     <div className="flex justify-between max-w-8xl mx-auto items-center">
+     <div className="flex justify-between max-w-8xl mx-auto items-center px-8 flex-col md:flex-row gap-8 lg:gap-4">
          {/* Left content */}
       <div className="w-full lg:w-1/2">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
           Why <span className="text-red-600">Choose Us?</span>
         </h2>
 
-        <ul className="space-y-5">
+        <ul className="space-y-6">
           {reasons.map((item, index) => (
             <li key={index} className="flex items-start gap-3">
               <Image
@@ -27,20 +27,19 @@ export function WhyChooseUs() {
                 height={24}
                 className="mt-1"
               />
-              <span className="text-gray-400 text-lg">{item}</span>
+              <span className="text-text-color font-normal text-lg">{item}</span>
             </li>
           ))}
         </ul>
       </div>
 
       {/* Right image */}
-      <div className="relative w-full h-[300px] md:h-[450px] hidden lg:block md:w-3/4">
+      <div className="relative w-full h-[300px] md:h-[300px] lg:h-[400px] lg:w-1/2">
         <Image
           src="/images/about-engine-parts.png" // Replace with your actual path or use imported image
           alt="Engine Spare Part"
-          layout="fill"
-          objectFit="cover"
-          className="rounded-xl"
+          fill
+          className="rounded-xl object-cover lg:object-contain"
         />
       </div>
      </div>

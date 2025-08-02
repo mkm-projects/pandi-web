@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function AboutPage() {
   const t = useTranslations("AboutPage");
   return (
-    <div className="flex flex-col h-full w-full relative ">
+    <div className="flex flex-col h-full w-full relative">
      <section className="relative text-white flex items-center justify-start h-full min-h-screen">
        {/* Left Content */}
          <div className="relative z-10 w-full">
@@ -38,6 +38,11 @@ export default function AboutPage() {
            priority
            className="h-full object-cover object-center w-full md:h-auto md:w-auto"
          />
+         
+         {/* add overlay */}
+         <div className="absolute top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.3)] sm:bg-transparent">
+
+         </div>
        </div>
  
        {/* Mobile Overlay for Readability */}

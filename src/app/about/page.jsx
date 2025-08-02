@@ -11,21 +11,19 @@ export default function AboutPage() {
      <section className="relative text-white flex items-center justify-start h-full min-h-screen">
        {/* Left Content */}
          <div className="relative z-10 w-full">
-      <div className="max-w-9xl mx-auto">
+      <div className="max-w-10xl mx-auto px-6 sm:px-10 xl:px-20">
 
-         <h1 className="text-[30px] sm:text-[40px] md:text-[60px] font-bold leading-tight">
+         <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-2 sm:mb-4 md:mb-0">
            {t("HeroSection.title")} <span className="text-primary">{t("HeroSection.title1")}</span>
          </h1>
 
-           <div className="flex items-center gap-2 text-[40px] font-bold">
+           <div className="flex items-center gap-2 text-3xl md:text-4xl font-bold max-w-xs sm:max-w-max">
             <span>
-{t("HeroSection.title2")} 
+{t("HeroSection.title2")} <span className="text-primary">{t("HeroSection.title3")}</span>
             </span>
-
-            <span className="text-primary">{t("HeroSection.title3")}</span>
            
            </div>
-         <p className="text-white font-light text-[14px] sm:text-[16px] leading-[30px] sm:leading-[34.5px] capitalize mt-6 max-w-xl">
+         <p className="text-white font-light text-sm sm:text-lg leading-[30px] sm:leading-[34.5px] capitalize mt-6 max-w-xl">
            {t("HeroSection.description")}
          </p>
        </div>
@@ -38,9 +36,8 @@ export default function AboutPage() {
            alt="Car Background"
           fill
            priority
-           className="h-full object-cover w-full "
+           className="h-full object-cover object-center w-full md:h-auto md:w-auto"
          />
-       {/* <div className="absolute inset-0 md:hidden bg-gradient-to-r from-black via-black/70 to-transparent z-0" /> */}
        </div>
  
        {/* Mobile Overlay for Readability */}

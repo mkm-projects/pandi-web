@@ -43,7 +43,7 @@ export default function Header() {
 
         <div className="flex items-center gap-14">
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden xl:flex items-center space-x-8">
             <Link href="/" className="text-primary font-semibold">
               {t("home")}
             </Link>

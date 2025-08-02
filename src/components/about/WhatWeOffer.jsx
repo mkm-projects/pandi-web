@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 const offerList = [
   {
@@ -37,14 +38,27 @@ export function WhatWeOffer() {
     <section className="text-white">
       {/* Header with background image */}
       <div
-        className="bg-cover bg-center py-10 md:py-14 text-center bg-primary"
-        style={{
-          backgroundImage: "url('/images/offer-bg.png')", // replace with your path
-        }}
+        className="bg-cover bg-center text-center bg-primary mx-auto overflow-hidden"
       >
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary">
+        <div className="flex justify-between items-center max-w-8xl mx-auto">
+         <Image
+          src="/images/offer_bg_1.svg" // Replace with your actual path or use imported image
+          alt="Offer spare part"
+          width={200}
+          height={200}
+          className="translate-y-3"
+        />
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary w-full">
           What <span className="text-white">We Offer</span>
         </h2>
+         <Image
+          src="/images/offer_bg_2.svg" // Replace with your actual path or use imported image
+          alt="Offer spare part"
+          width={200}
+          height={200}
+          className="-translate-y-3"
+        />
+        </div>
       </div>
 
       {/* Card Grid */}

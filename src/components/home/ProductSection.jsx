@@ -2,9 +2,10 @@ import { productList } from "@/lib/data/products";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export default function ProductPage() {
-  const t = useTranslations("Product.HomeProduct");
-  const tr = useTranslations("Product.HomeProduct.parts");
+export default function ProductSection() {
+  const t = useTranslations("HomePage.HomeProduct");
+  const tr = useTranslations("HomePage.HomeProduct.parts");
+
   return (
     <section className="py-15 md:py-20 bg-white">
       <div className="px-4 max-w-6xl mx-auto">
@@ -16,7 +17,7 @@ export default function ProductPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-2  md:grid-cols-3 gap-5 md:gap-10 px-4 max-w-6xl mx-auto my-9 md:my-15">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 px-4 max-w-6xl mx-auto my-9 md:my-15">
         {productList.map((item) => (
           <div
             key={item.key}
@@ -49,7 +50,7 @@ export default function ProductPage() {
             {t("everything")}
           </h2>
           <h3 className="font-bold text-[22px] sm:text-[40px] md:text-[57.5px] leading-[100%] capitalize mt-6">
-            {t("all")} <span className="text-primary"> {t("place")}</span>
+            {t("all")} <span className="text-primary">{t("place")}</span>
           </h3>
         </div>
       </div>

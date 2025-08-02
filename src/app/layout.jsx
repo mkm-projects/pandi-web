@@ -20,7 +20,7 @@ export default async function RootLayout({ children }) {
   const locale = await getLocale();
   return (
     <html lang={locale}>
-      <body className={`${roboto.variable} font-sans antialiased`}>
+      <body className={`${roboto.variable} font-sans antialiased debug-screens`}>
         <div
           style={{
             // backgroundColor: "#fff",
@@ -32,7 +32,7 @@ export default async function RootLayout({ children }) {
           <NextIntlClientProvider locale={locale}>
             <Header />
             {children}
-            <Footer />
+            <Footer  />
           </NextIntlClientProvider>
         </div>
       </body>

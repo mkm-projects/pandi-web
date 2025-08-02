@@ -10,18 +10,9 @@
       "description": "Discover a wide selection of OEM and aftermarket parts for all vehicle types. Genuine quality, competitive prices, and reliable performance guaranteed. Shop with confidence and keep your ride running smoothly.",
       "callAction1": "Book Now",
       "callAction2": "Explore Parts"
-    }
-  },
-  "Header": {
-    "MenuNames": {
-      "home": "Home",
-      "aboutUs": "About Us",
-      "products": "Products",
-      "contact": "Contact"
-    }
-  },
-  "About": {
-    "HomeAbout": {
+    },
+
+     "HomeAbout": {
       "counts": {
         "yearsOfExperience": "Years Of Experience",
         "orderServedSuccess": "Order Served Success",
@@ -38,10 +29,8 @@
         "quality": "Trusted Quality",
         "delivery": "Secure Delivery"
       }
-    }
-  },
-  "Product": {
-    "HomeProduct": {
+    },
+"HomeProduct": {
       "explore": "Explore Our",
       "products": "Products",
       "p1": "Browse our wide range of high-quality spare parts designed to fit perfectly and perform reliably. Whether you’re upgrading, replacing, or repairing — we’ve got the right part for you.",
@@ -56,13 +45,29 @@
       "everything": "Everything Your Vehicle Needs",
       "all": "All In One",
       "place": "Place"
-    }
-  },
-  "Brand": {
-    "HomeBrand": {
+    },
+
+ "HomeBrand": {
       "brand": "Brands We",
       "trus": "Trust",
       "p1": "Browse our wide range of high-quality spare parts designed to fit perfectly and perform reliably. Whether you’re upgrading, replacing, or repairing — we’ve got the right part for you"
+    }
+  },
+  "Header": {
+    "MenuNames": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "products": "Products",
+      "contact": "Contact"
+    }
+  },
+  "AboutPage": {
+    "HeroSection": {
+      "title": "About",
+      "title1": "Us",
+      "title2": "Trusted by Customers Since",
+      "title3": "1972",
+      "description": "Welcome to pandi Auto spare, your one-stop destination for high-quality spare parts for all types of vehicles. From everyday commuters to heavy-duty machines, we provide reliable solutions to keep you moving with confidence."
     }
   }
 }

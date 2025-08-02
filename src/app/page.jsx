@@ -1,24 +1,15 @@
 import HeroSection from "@/components/HeroSection";
-import { AboutPage } from "./about/page";
-import { ProductPage } from "./product/page";
-import { BrandPage } from "./brand/page";
-// import { Button } from "@/components/ui/button";
+import { AboutSection } from "@/components/home/AboutSection";
+import ProductSection from "@/components/home/ProductSection";
+import { BrandSection } from "@/components/home/BrandSection";
 
 export default function Home() {
   return (
     <div className="grid">
-
       <HeroSection />
-      <AboutPage />
-      <ProductPage />
-      <BrandPage />
-      {/* <h2 className="text-primary">
-        {t('title')}
-      </h2>
-
-      <Button className={"bg-primary"}>
-        {t('description')}
-      </Button> */}
+      <AboutSection />
+      <ProductSection />
+      <BrandSection />
     </div>
   );
 }

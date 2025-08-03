@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import { AboutSection } from "@/components/home/AboutSection";
+import { BrandSection } from "@/components/home/BrandSection";
 import ProductSection from "@/components/home/ProductSection";
-import { BrandPage } from "./brand/page";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ProductSection />
-      <BrandPage />
+      <BrandSection />
     </div>
   );
 }

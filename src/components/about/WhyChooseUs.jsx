@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const reasons = [
@@ -8,13 +9,17 @@ const reasons = [
 ];
 
 export function WhyChooseUs() {
+  const t = useTranslations("AboutPage.WhyChooseUs");
+  const reasons = t.raw("reasons");
   return (
     <section className="bg-white py-10 md:py-20">
      <div className="flex justify-between max-w-8xl mx-auto items-center px-8 flex-col md:flex-row gap-8 lg:gap-4">
          {/* Left content */}
       <div className="w-full lg:w-1/2">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black">
-          Why <span className="text-red-600">Choose Us?</span>
+          {t("titleLabel1")} <span className="text-red-600">
+            {t("titleLabel2")}
+          </span>
         </h2>
 
         <ul className="space-y-6">

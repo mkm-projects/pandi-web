@@ -11,12 +11,16 @@ import { Call, Menu } from "iconsax-reactjs";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 export default function Header() {
   const [showNumber, setShowNumber] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const locale = useLocale();
+
+  // get current page path
+  const path = usePathname();
 
   const [userLocale, setLocale] = useState(locale); // Default locale
 
@@ -43,17 +47,17 @@ export default function Header() {
 
         <div className="flex items-center gap-14">
           {/* Desktop Navigation */}
-          <nav className="hidden xl:flex items-center space-x-8">
-            <Link href="/" className="text-primary font-semibold">
+          <nav className="hidden lg:flex items-center space-x-8">
+            <Link href="/" className={`${path === '/' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>
               {t("home")}
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-primary">
+            <Link href="/about" className={`${path === '/about' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>
               {t("aboutUs")}
             </Link>
-            <Link href="/products" className="text-gray-700 hover:text-primary">
+            <Link href="/products" className={`${path === '/products' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>
               {t("products")}
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-primary">
+            <Link href="/contact" className={`${path === '/contact' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}>
               {t("contact")}
             </Link>
           </nav>
@@ -100,7 +104,7 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-primary"
+              className="lg:hidden p-2 rounded focus:outline-none cursor-pointer"
             >
               <Menu size="24" color="#000" />
             </button>

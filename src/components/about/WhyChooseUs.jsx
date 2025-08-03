@@ -13,7 +13,7 @@ export function WhyChooseUs() {
   const reasons = t.raw("reasons");
   return (
     <section className="bg-white py-10 md:py-20">
-     <div className="flex justify-between max-w-8xl mx-auto items-center px-8 flex-col md:flex-row gap-8 lg:gap-4">
+     <div className="flex justify-between max-w-10xl mx-auto items-center px-8 flex-col md:flex-row gap-8 lg:gap-4">
          {/* Left content */}
       <div className="w-full lg:w-1/2">
         <h2 className="text-xl sm:text-3xl md:text-4xl font-bold mb-6 text-black">

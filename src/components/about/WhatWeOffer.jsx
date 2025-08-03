@@ -11,7 +11,7 @@ export function WhatWeOffer() {
       <div
         className="bg-cover bg-center text-center bg-primary mx-auto overflow-hidden"
       >
-        <div className="flex justify-between items-center max-w-8xl mx-auto">
+        <div className="flex justify-between items-center max-w-9xl mx-auto">
          <Image
           src="/images/offer_bg_1.svg" // Replace with your actual path or use imported image
           alt="Offer spare part"
@@ -35,7 +35,7 @@ export function WhatWeOffer() {
       </div>
 
       {/* Card Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-8xl mx-auto py-10 px-8 sm:px-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-10xl mx-auto py-10 px-8 sm:px-10">
         {offerList.map((item, index) => (
           <div
             key={index}

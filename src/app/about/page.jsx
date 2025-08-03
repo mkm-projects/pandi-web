@@ -11,7 +11,7 @@ export default function AboutPage() {
       <section className="relative text-white flex items-center justify-start h-full min-h-screen">
         {/* Left Content */}
         <div className="relative z-10 w-full">
-          <div className="px-4 sm:px-6 md:px-20 py-15 sm:py-24">
+          <div className="px-4 sm:px-6 md:px-40 py-15 sm:py-24">
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight mb-2 sm:mb-4 md:mb-0">
               {t("titleLabel1")}{" "}
               <span className="text-primary">{t("titleLabel2")}</span>

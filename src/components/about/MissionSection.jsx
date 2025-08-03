@@ -5,7 +5,7 @@ export function MissionSection() {
   const t = useTranslations("AboutPage.MissionSection");
   return (
     <section className="bg-white py-10 md:py-24">
-      <div className="max-w-6xl md:max-w-8xl mx-auto px-8 sm:px-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div className="max-w-6xl md:max-w-10xl mx-auto px-8 sm:px-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left - Image */}
         <div className="relative h-72 lg:h-[400px] w-full rounded-2xl overflow-hidden order-2 lg:order-1">
           <Image

@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <section className="relative bg-black text-white flex items-center justify-start overflow-hidden py-22 sm:py-18 md:14 min-h-screen">
       {/* Left Content */}
-      <div className="relative z-10 w-full md:w-1/2 px-4 sm:px-6 md:px-20 py-15 sm:py-24">
+      <div className="relative z-10 w-full md:w-1/2 px-4 sm:px-6 md:px-40 py-15 sm:py-24">
         <h1 className="text-[30px] sm:text-[40px] md:text-[57.5px] font-bold leading-tight">
           {t("title1")} <span className="text-primary">{t("title2")}</span>
           <br />

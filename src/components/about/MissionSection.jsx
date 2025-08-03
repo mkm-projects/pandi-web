@@ -18,21 +18,21 @@ export function MissionSection() {
 
         {/* Right - Content */}
         <div className="text-[#1C1C1C] order-1 lg:order-2">
-          <h3 className="text-2xl sm:text-3xl font-semibold mb-4">
+          <h3 className="text-xl sm:text-3xl md:text-4xl font-semibold mb-4">
             {t('titleLabel1')} <span className="text-primary font-bold">
               {t('titleLabel2')}
             </span>
           </h3>
-          <p className="text-sm sm:text-base font-light text-gray-700 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl font-light text-gray-700 mb-8 leading-relaxed">
             {t('subtitle1')}
           </p>
 
-          <h3 className="text-2xl sm:text-3xl font-semibold mb-4">
+          <h3 className="text-xl sm:text-3xl md:text-4xl font-semibold mb-4">
             {t('titleLabel3')} <span className="text-primary font-bold">
               {t('titleLabel4')}
             </span>
           </h3>
-          <p className="text-sm sm:text-base font-light text-gray-700 leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl font-light text-gray-700 leading-relaxed">
             {t('subtitle2')}
           </p>
         </div>

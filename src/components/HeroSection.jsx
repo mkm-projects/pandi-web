@@ -16,7 +16,7 @@ export default function HeroSection() {
           <br />
           {t("title5")}
         </h1>
-        <p className="text-white font-light text-[14px] sm:text-[16px] leading-[30px] sm:leading-[34.5px] capitalize mt-6 max-w-xl">
+        <p className="text-white font-light text-sm sm:text-xl leading-[30px] sm:leading-[34.5px] tracking-normal capitalize mt-6 max-w-xl">
           {t("description")}
         </p>
 

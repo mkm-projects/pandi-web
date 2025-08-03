@@ -19,7 +19,7 @@ export function WhatWeOffer() {
           height={200}
           className="translate-y-3 h-[100px] w-[100px] lg:w-auto"
         />
-        <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-secondary w-full">
+        <h2 className="text-3xl md:text-4xl font-bold text-secondary w-full">
           {t("titleLabel1")} <span className="text-white">
             {t("titleLabel2")}
           </span>
@@ -41,8 +41,8 @@ export function WhatWeOffer() {
             key={index}
             className="bg-card-custom-1 text-gray-900 rounded-xl py-10 px-6 transition"
           >
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-secondary">{item.title}</h3>
-            <p className="text-lg sm:text-xl md:text-2xl font-light leading-relaxed text-text-color">
+            <h3 className="text-xl md:text-2xl font-bold mb-2 text-secondary">{item.title}</h3>
+            <p className="text-lg md:text-xl font-light leading-relaxed text-text-color">
               {item.description}
             </p>
           </div>

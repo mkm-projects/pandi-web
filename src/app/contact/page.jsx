@@ -6,10 +6,10 @@ export default function ContactPage() {
   const t = useTranslations("AboutPage.ContactUs");
   return (
     <section className="relative text-white flex flex-col items-center justify-start h-full min-h-screen">
-        <div className="flex items-center relative w-full h-full min-h-[250px]" style={{
-            backgroundImage: "url('/images/contact_telephone.jpg')",
+        <div className="flex items-center relative w-full h-full min-h-[200px]" style={{
+            backgroundImage: "url('/images/contact_phone.png')",
             backgroundSize: "cover",
-            backgroundPosition: "center",
+            backgroundPosition: "top",
             backgroundRepeat: "no-repeat",
         }}>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight z-10 px-4 sm:px-6 md:px-10 lg:px-30">
@@ -21,7 +21,7 @@ export default function ContactPage() {
 
         <div className="w-full relative flex items-center md:flex-row flex-col justify-between px-6 md:px-4 py-10 max-w-10xl mx-auto overflow-hidden">
           <div className="flex flex-col gap-6 px-4 sm:px-6 md:px-10 lg:px-30 py-10 w-full md:w-auto">
-            <h2 className="text-xl sm:text-3xl md:text-4xl font-bold text-black leading-tight">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-black leading-tight">
                {t("titleLabel3")} <span className="text-primary">
                  {t("titleLabel4")}
                </span>
@@ -45,13 +45,13 @@ export default function ContactPage() {
 
             {/* Support Hours */}
             <div>
-              <h3 className="text-lg sm:text-2xl md:text-3xl font-semibold text-black">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-black">
                  {t("titleLabel5")} <span className="text-primary"> {t("titleLabel6")}</span>:
               </h3>
-              <p className="text-text-color text-lg sm:text-xl md:text-2xl mt-1">
+              <p className="text-text-color sm:text-lg md:text-xl mt-1">
                 {t("time")}
               </p>
-              <p className="text-text-color text-lg sm:text-xl md:text-2xl mt-1">
+              <p className="text-text-color sm:text-lg md:text-xl mt-1">
                 ({t("closeTime")})
               </p>
             </div>

@@ -16,7 +16,7 @@ export function WhyChooseUs() {
      <div className="flex justify-between max-w-10xl mx-auto items-center px-8 flex-col md:flex-row gap-8 lg:gap-4">
          {/* Left content */}
       <div className="w-full lg:w-1/2">
-        <h2 className="text-xl sm:text-3xl md:text-4xl font-bold mb-6 text-black">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-black">
           {t("titleLabel1")} <span className="text-red-600">
             {t("titleLabel2")}
           </span>
@@ -32,7 +32,7 @@ export function WhyChooseUs() {
                 height={24}
                 className="mt-1"
               />
-              <span className="text-text-color font-normal text-lg sm:text-xl md:text-2xl">{item}</span>
+              <span className="text-text-color font-normal text-lg md:text-2xl">{item}</span>
             </li>
           ))}
         </ul>

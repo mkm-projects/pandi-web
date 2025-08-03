@@ -1,3 +1,4 @@
+
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { NextIntlClientProvider } from "next-intl";
@@ -20,7 +21,7 @@ export default async function RootLayout({ children }) {
   const locale = await getLocale();
   return (
     <html lang={locale}>
-      <body className={`${roboto.variable} font-sans antialiased`}>
+      <body className={`${roboto.variable} font-sans antialiased debug-screens`}>
         <div
           style={{
             // backgroundColor: "#fff",

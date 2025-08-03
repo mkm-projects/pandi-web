@@ -1,9 +1,10 @@
-import Image from "next/image";
-import { useTranslations } from "next-intl";
 import { brandList } from "@/lib/data/brands";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
 
-export function BrandPage() {
-  const t = useTranslations("Brand.HomeBrand");
+export function BrandSection() {
+  const t = useTranslations("HomePage.HomeBrand");
+
   return (
     <section className="py-2 md:py-10 bg-white">
       <div className="px-4 max-w-6xl mx-auto">
@@ -25,7 +26,7 @@ export function BrandPage() {
               <Image
                 src={item.image}
                 alt={item.key}
-                layout="fill"
+                fill
                 objectFit="contain"
               />
             </div>

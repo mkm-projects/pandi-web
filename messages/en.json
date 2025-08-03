@@ -36,11 +36,36 @@
       "p1": "Browse our wide range of high-quality spare parts designed to fit perfectly and perform reliably. Whether you’re upgrading, replacing, or repairing — we’ve got the right part for you.",
       "parts": {
         "parts": "Engine Parts",
+        "parts_first": "Engine",
+        "parts_second": "Parts",
+        "parts_desc": "Engine parts are the heart of your vehicle's performance. This category includes vital components like pistons, crankshafts, camshafts, cylinder heads, gaskets, timing chains, and engine mounts — all designed to ensure efficient power delivery, fuel combustion, and smooth operation.",
+
         "disks": "Brake & Disks",
+        "disks_first": "Brake",
+        "disks_second": " & ",
+        "disks_third": "Disks",
+        "disks_desc": "Ensure safe and responsive stopping power with our high-quality brake components. Our range includes brake pads, brake discs (rotors), calipers, and related hardware designed for precise fitment and optimal performance.",
+
         "electronic": "Electronic Parts",
+        "electronic_first": "Electronic",
+        "electronic_second": "Parts",
+        "electronic_desc": "Stay powered and connected with high-quality electronic components for your vehicle. This category includes essential parts like alternators, sensors, relays, ECUs (Engine Control Units), wiring harnesses, and digital meters. Whether it’s for power management, signal control, or onboard diagnostics, our electronic parts ensure reliable performance, safety, and compatibility with modern vehicles.",
+
         "light": "Light Parts",
+        "light_first": "Light",
+        "light_second": "Parts",
+        "light_desc": "Illuminate your drive with our wide range of high-quality light parts. From headlights and tail lamps to fog lights, indicators, and interior bulbs — we offer lighting solutions that ensure safety, visibility, and style. All parts are compatible with major vehicle brands and built for durability in all weather conditions.",
+
         "oil": "Oil & Lubrication",
-        "bodyParts": "Body Parts"
+        "oil_first": "Oil",
+        "oil_second": " & ",
+        "oil_third": "Lubrication",
+        "oil_desc": "Keep your engine running smoothly and efficiently with high-quality oils and lubricants. This category includes engine oil, gear oil, brake fluid, grease, and other essential fluids that reduce friction, prevent wear, and extend the life of your vehicle’s components. Suitable for all types of vehicles and driving conditions.",
+
+        "bodyParts": "Body Parts",
+        "bodyParts_first": "Body",
+        "bodyParts_second": "Parts",
+        "bodyParts_desc": "Restore your vehicle’s appearance and structure with high-quality body components. From bumpers and fenders to mirrors, grills, door handles, and panels — our body parts are built for perfect fit, durability, and a factory-finish look. Whether you're repairing damage or upgrading style, find everything you need to bring your vehicle back to life."
       },
       "everything": "Everything Your Vehicle Needs",
       "all": "All In One",
@@ -128,6 +153,25 @@
       "titleLabel6": "Hours",
       "time": "Monday – Saturday: 9:00 AM To 7:00 PM",
       "closeTime": "Sundays & Public Holidays Closed"
+    }
+  },
+  "ProductPage": {
+    "HeroSection": {
+      "our": "Our ",
+      "products": "Products",
+      "subtitle": "High-Quality Spare Parts for Every Vehicle",
+      "description": "Explore a wide range of spare parts that guarantee performance, durability, and compatibility. Whether you need OEM components or trusted aftermarket alternatives, we’ve got exactly what your vehicle needs — all in one place."
+    },
+    "WhyByFromUs": {
+      "titleLabel1": "Why",
+      "titleLabel2": "Buy From Us",
+      "?": "?",
+      "reasons": [
+        "100% genuine & verified parts",
+        "Fast delivery across locations",
+        "Trusted brands, affordable prices",
+        "Dedicated customer support"
+      ]
     }
   }
 }

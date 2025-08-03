@@ -7,30 +7,14 @@ import {
   Whatsapp,
   Youtube,
 } from "iconsax-reactjs";
+import { SocialIcon } from "./SocialIcon";
 
 export default function Footer() {
-  const SocialIcon = ({
-    icon: Icon,
-    hoverColor = "text-white",
-    href = "#",
-  }) => (
-    <a
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-      className="group relative w-14 h-14 flex items-center justify-center rounded-full bg-[#1a1a1d]"
-    >
-      <div className="rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-        <Icon size="28" variant="Bold" className={`${hoverColor}`} />
-      </div>
-    </a>
-  );
-
   return (
     <>
       <div className="text-white bg-cover bg-center w-full h-full overflow-hidden bg-secondary">
         <div className="relative z-10">
-          <div className="flex flex-col md:flex-row justify-between gap-8 relative">
+          <div className="flex flex-col lg:flex-row justify-between gap-4 md:gap-6 relative">
             <div className="flex-1 mt-5 px-28 py-20 z-10">
               <img
                 src="/images/logo.png"
@@ -80,14 +64,14 @@ export default function Footer() {
             <div className="flex relative">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62662.18950647047!2d76.10954598111691!3d11.009574826737895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7cc54481b4493%3A0x26f77eae08f52b41!2sPandi%20Auto%20Spares!5e0!3m2!1sen!2sin!4v1753016755766!5m2!1sen!2sin"
-                className="w-full h-[80%] border-0 absolute top-1/2 transform -translate-y-1/2 right-10 z-20 rounded-lg"
+                className="h-[80%] border-0 absolute top-1/2 transform -translate-y-1/2 sm:right-10 right-5 z-10 rounded-lg mx-auto w-[90%] lg:w-full"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
 
-              <div className="relative overflow-hidden h-full w-full">
+              <div className="relative overflow-hidden h-full w-full opacity-0 lg:opacity-100">
                 <img
                   src="/images/footer_img.png"
                   alt="Car Background"
@@ -100,7 +84,7 @@ export default function Footer() {
         </div>
       </div>
       <footer className="bg-white border-t p-2 md:p-4 text-center">
-        <p className="text-[#4C4C4C] !font-extralight text-[0.6rem] sm:text-[0.9rem]">
+        <p className="text-[#4C4C4C] !font-extralight text-xs sm:text-sm">
           &copy; All Rights Reserved | Designed And Developed By MKM Solutions
         </p>
       </footer>

@@ -27,7 +27,7 @@ export default function ProductSection() {
               <Image
                 src={item.image}
                 alt={tr(item.key)}
-                layout="fill"
+                fill
                 objectFit="contain"
               />
             </div>

@@ -1,3 +1,4 @@
+
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { NextIntlClientProvider } from "next-intl";
@@ -32,7 +33,7 @@ export default async function RootLayout({ children }) {
           <NextIntlClientProvider locale={locale}>
             <Header />
             {children}
-            <Footer  />
+            <Footer />
           </NextIntlClientProvider>
         </div>
       </body>

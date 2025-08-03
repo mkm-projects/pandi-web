@@ -12,7 +12,7 @@
       "callAction2": "Explore Parts"
     },
 
-     "HomeAbout": {
+    "HomeAbout": {
       "counts": {
         "yearsOfExperience": "Years Of Experience",
         "orderServedSuccess": "Order Served Success",
@@ -30,7 +30,7 @@
         "delivery": "Secure Delivery"
       }
     },
-"HomeProduct": {
+    "HomeProduct": {
       "explore": "Explore Our",
       "products": "Products",
       "p1": "Browse our wide range of high-quality spare parts designed to fit perfectly and perform reliably. Whether you’re upgrading, replacing, or repairing — we’ve got the right part for you.",
@@ -47,7 +47,7 @@
       "place": "Place"
     },
 
- "HomeBrand": {
+    "HomeBrand": {
       "brand": "Brands We",
       "trus": "Trust",
       "p1": "Browse our wide range of high-quality spare parts designed to fit perfectly and perform reliably. Whether you’re upgrading, replacing, or repairing — we’ve got the right part for you"
@@ -63,11 +63,71 @@
   },
   "AboutPage": {
     "HeroSection": {
-      "title": "About",
-      "title1": "Us",
-      "title2": "Trusted by Customers Since",
-      "title3": "1972",
+      "titleLabel1": "About",
+      "titleLabel2": "Us",
+      "subtitleLabel1": "Trusted by Customers Since",
+      "subtitleLabel2": "1972",
       "description": "Welcome to pandi Auto spare, your one-stop destination for high-quality spare parts for all types of vehicles. From everyday commuters to heavy-duty machines, we provide reliable solutions to keep you moving with confidence."
+    },
+    "MissionSection": {
+      "titleLabel1": "Who",
+      "titleLabel2": "We Are",
+      "titleLabel3": "Our",
+      "titleLabel4": "Mission",
+      "subtitle1": "We re a team of auto enthusiasts and professionals with a passion for performance and precision. With years of industry experience, we understand the importance of using the right part — which is why we only offer products that meet strict standards of quality, durability, and fit.",
+      "subtitle2": "To make spare part buying easy, reliable, and accessible for every customer — whether you’re a car owner, a mechanic, or a shop owner. We aim to build long-term relationships based on honesty, quality, and service excellence."
+    },
+    "OfferSection": {
+      "titleLabel1": "What",
+      "titleLabel2": "We Offer",
+      "offerList": [
+        {
+          "title": "OEM & Aftermarket Parts",
+          "description": "We supply genuine Original Equipment Manufacturer (OEM) parts along with trusted aftermarket alternatives for all major brands and vehicle types."
+        },
+        {
+          "title": "Wide Product Range",
+          "description": "From engine components to electrical systems, filters, brakes, body parts, accessories, and more — we’ve got everything under one roof."
+        },
+        {
+          "title": "Trusted Brands",
+          "description": "We work with renowned brands like Bosch, NGK, TVS, Castrol, Exide, Minda, and many more."
+        },
+        {
+          "title": "Affordable Prices",
+          "description": "Competitive pricing without compromising on quality. We believe great parts shouldn’t break the bank."
+        },
+        {
+          "title": "Fast Delivery & Support",
+          "description": "Timely shipping, easy returns, and dedicated customer service to assist you every step of the way."
+        },
+        {
+          "title": "Easy Part Search & Filtering",
+          "description": "Our user-friendly website makes it simple to search, filter, and find the exact part you need — by vehicle model, brand, category, or part number."
+        }
+      ]
+    },
+    "WhyChooseUs": {
+      "titleLabel1": "Why",
+      "titleLabel2": "Choose Us?",
+      "reasons": [
+        "100% Genuine Products",
+        "Wide Compatibility Across Vehicles",
+        "Secure Payments & Hassle-Free Returns",
+        "Trusted By Customers Nationwide"
+      ]
+    },
+    "ContactUs": {
+      "titleLabel1": "Contact",
+      "titleLabel2": "Us",
+      "titleLabel3": "Get In",
+      "titleLabel4": "Touch",
+      "phone": "+91 8606449640",
+      "mail": "Pandispare@gmail.com",
+      "titleLabel5": "Customer Support",
+      "titleLabel6": "Hours",
+      "time": "Monday – Saturday: 9:00 AM To 7:00 PM",
+      "closeTime": "Sundays & Public Holidays Closed"
     }
   }
 }

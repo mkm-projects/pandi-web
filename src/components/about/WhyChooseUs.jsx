@@ -32,7 +32,7 @@ export function WhyChooseUs() {
                 height={24}
                 className="mt-1"
               />
-              <span className="text-text-color font-normal text-lg md:text-2xl">{item}</span>
+              <span className="text-text-color font-normal text-lg md:text-xl">{item}</span>
             </li>
           ))}
         </ul>

@@ -23,7 +23,7 @@ export function MissionSection() {
               {t('titleLabel2')}
             </span>
           </h3>
-          <p className="text-lg md:text-xl font-light text-gray-700 mb-8 leading-relaxed">
+          <p className="md:text-xl font-light text-gray-700 mb-8 leading-relaxed">
             {t('subtitle1')}
           </p>
 
@@ -32,7 +32,7 @@ export function MissionSection() {
               {t('titleLabel4')}
             </span>
           </h3>
-          <p className="text-lg md:text-xl font-light text-gray-700 leading-relaxed">
+          <p className="md:text-xl font-light text-gray-700 leading-relaxed">
             {t('subtitle2')}
           </p>
         </div>

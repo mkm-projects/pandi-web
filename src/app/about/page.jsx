@@ -23,7 +23,7 @@ export default function AboutPage() {
                 <span className="text-primary">{t("subtitleLabel2")}</span>
               </span>
             </div>
-            <p className="text-white font-light text-lg sm:text-xl md:text-2xl leading-[30px] sm:leading-[34.5px] tracking-wide capitalize mt-6 max-w-3xl">
+            <p className="text-white font-light sm:text-xl leading-[30px] sm:leading-[34.5px] tracking-wide capitalize mt-6 max-w-3xl">
               {t("description")}
             </p>
           </div>

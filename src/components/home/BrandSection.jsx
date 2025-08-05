@@ -8,7 +8,7 @@ export function BrandSection() {
   return (
     <section className="py-2 md:py-10 bg-white">
       <div className="px-4 max-w-6xl mx-auto">
-        <h2 className="font-bold text-[38px] sm:text-[57.5px] leading-[100%] capitalize">
+        <h2 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-[100%] capitalize">
           {t("brand")} <span className="text-primary">{t("trus")}</span>
         </h2>
         <p className="text-[#4C4C4C] font-light text-[14px] sm:text-[16px] leading-[30px] sm:leading-[34.5px] capitalize max-w-2xl mt-8">

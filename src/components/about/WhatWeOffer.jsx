@@ -42,7 +42,7 @@ export function WhatWeOffer() {
             className="bg-card-custom-1 text-gray-900 rounded-xl py-10 px-6 transition"
           >
             <h3 className="text-xl md:text-2xl font-bold mb-2 text-secondary">{item.title}</h3>
-            <p className="text-lg md:text-xl font-light leading-relaxed text-text-color">
+            <p className="md:text-xl font-light leading-relaxed text-text-color">
               {item.description}
             </p>
           </div>

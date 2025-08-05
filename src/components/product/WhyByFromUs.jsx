@@ -7,11 +7,11 @@ export function WhyByFromUs() {
 
   return (
     <section className="py-12 md:py-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-26">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           {/* Content Section */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-black leading-tight">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 text-black leading-tight whitespace-nowrap">
               {t("titleLabel1")}{" "}
               <span className="text-red-600">
                 {t("titleLabel2")}
@@ -42,7 +42,7 @@ export function WhyByFromUs() {
           {/* Image Section */}
           <div className="relative w-full h-[280px] md:h-[320px] lg:h-[350px] bg-gradient-to-br from-gray-900 to-black rounded-xl overflow-hidden">
             <Image
-              src="/images/product_car.png"
+              src="/images/product_car.webp"
               alt="Engine Spare Part"
               fill
               className="object-cover object-center"

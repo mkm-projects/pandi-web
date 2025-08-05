@@ -13,14 +13,14 @@ export default function ProductHeroSection() {
         <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight whitespace-nowrap mt-8">
           {t("subtitle")}
         </h2>
-        <p className="text-white font-light text-lg sm:text-xl md:text-2xl sm:leading-[34.5px] capitalize mt-8 max-w-xl">
+        <p className="text-white font-light text-sm sm:text-xl leading-[30px] sm:leading-[34.5px] capitalize mt-8 max-w-xl">
           {t("description")}
         </p>
       </div>
 
       <div className="absolute top-0 right-0 w-full h-full z-0">
         <Image
-          src="/images/products_tyre.png"
+          src="/images/products_tyre.webp"
           alt="Car Background"
           fill
           className="object-cover object-center"

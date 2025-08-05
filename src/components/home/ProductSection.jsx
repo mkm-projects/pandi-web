@@ -9,7 +9,7 @@ export default function ProductSection() {
   return (
     <section className="py-15 md:py-20 bg-white">
       <div className="px-4 max-w-6xl mx-auto">
-        <h2 className="font-bold text-[38px] sm:text-[57.5px] leading-[100%] capitalize">
+        <h2 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-[100%] capitalize">
           {t("explore")} <span className="text-primary">{t("products")}</span>
         </h2>
         <p className="text-[#4C4C4C] font-light text-[14px] sm:text-[16px] leading-[30px] sm:leading-[34.5px] capitalize max-w-2xl mt-6 md:mt-8">
@@ -46,10 +46,10 @@ export default function ProductSection() {
         <div className="absolute inset-0 bg-[#17181C]/70" />
 
         <div className="relative z-10 px-4 py-6 rounded text-white">
-          <h2 className="font-bold text-[22px] sm:text-[40px] md:text-[57.5px] leading-[100%] capitalize">
+          <h2 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-[100%] capitalize">
             {t("everything")}
           </h2>
-          <h3 className="font-bold text-[22px] sm:text-[40px] md:text-[57.5px] leading-[100%] capitalize mt-6">
+          <h3 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-[100%] capitalize mt-6">
             {t("all")} <span className="text-primary">{t("place")}</span>
           </h3>
         </div>

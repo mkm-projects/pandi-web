@@ -30,13 +30,13 @@ export function AboutSection() {
 
       {/* About Us Section */}
       <div className="max-w-3xl mx-auto mt-10 px-4 py-4 sm:py-8 md:py-14">
-        <h2 className="font-bold text-[38px] sm:text-[57.5px] leading-[100%] text-center capitalize mb-4">
+        <h2 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-[100%] text-center capitalize mb-4">
           {t("about")} <span className="text-primary">{t("us")}</span>
         </h2>
         <p className="text-[#4C4C4C] font-light text-[14px] sm:text-[16px] leading-[30px] sm:leading-[34.5px] text-center capitalize mb-6">
           {t("p1")}
         </p>
-        <p className="text-[#4C4C4C] font-light text-[14px] sm:text-[16px] leading-[30px] text-center capitalize mb-6">
+        <p className="text-[#4C4C4C] font-light text-[14px] sm:text-[16px] leading-[30px] sm:leading-[34.5px] text-center capitalize mb-6">
           {t("p2")}
         </p>
         <button className="bg-primary text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition">

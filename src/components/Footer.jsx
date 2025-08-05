@@ -73,7 +73,7 @@ export default function Footer() {
 
               <div className="relative overflow-hidden h-full w-full opacity-0 lg:opacity-100">
                 <img
-                  src="/images/footer_img.png"
+                  src="/images/footer_img.webp"
                   alt="Car Background"
                   className="w-full h-full object-cover scale-150 -translate-x-44 translate-y-24 filter brightness-50"
                   

@@ -20,7 +20,7 @@ export default function ProductHeroSection() {
 
       <div className="absolute top-0 right-0 w-full h-full z-0">
         <Image
-          src="/images/products_tyre.png"
+          src="/images/products_tyre.webp"
           alt="Car Background"
           fill
           className="object-cover object-center"

@@ -42,7 +42,7 @@ export function WhyByFromUs() {
           {/* Image Section */}
           <div className="relative w-full h-[280px] md:h-[320px] lg:h-[350px] bg-gradient-to-br from-gray-900 to-black rounded-xl overflow-hidden">
             <Image
-              src="/images/product_car.png"
+              src="/images/product_car.webp"
               alt="Engine Spare Part"
               fill
               className="object-cover object-center"

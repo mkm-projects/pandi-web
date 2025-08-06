@@ -28,7 +28,7 @@ export default function ProductSection() {
                 src={item.image}
                 alt={tr(item.key)}
                 fill
-                objectFit="contain"
+                className="object-contain"
               />
             </div>
             <h3 className="text-[16px] md:text-[24px] font-light leading-[100%] tracking-normal text-center capitalize font-roboto">

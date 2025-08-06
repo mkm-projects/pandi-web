@@ -1,7 +1,7 @@
 "use client";
-import Image from "next/image";
 import { productList } from "@/lib/data/products";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function ProductDetails() {
   const t = useTranslations("HomePage.HomeProduct");
@@ -27,7 +27,7 @@ export default function ProductDetails() {
               src={item.image}
               alt={tr(item.key)}
               layout="fill"
-              objectFit="contain"
+              className="object-contain"
             />
           </div>
 

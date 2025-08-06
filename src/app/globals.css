@@ -48,6 +48,7 @@
   --container-8xl: 88rem;
   --container-9xl: 96rem;
   --container-10xl: 104rem;
+  --text-md: 1rem;
 }
 
 @theme inline {
@@ -98,6 +99,7 @@
   --container-8xl: var(--container-8xl);
   --container-9xl: var(--container-9xl);
   --container-10xl: var(--container-10xl);
+  --text-md: var(--text-md);
 }
 
 .dark {
@@ -134,6 +136,10 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -142,3 +148,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+/* animations */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+}
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.fadeIn.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+

@@ -7,20 +7,20 @@ export default function ContactPage() {
   return (
     <section className="relative text-white flex flex-col items-center justify-start h-full min-h-screen">
         <div className="flex items-center relative w-full h-full min-h-[200px]" style={{
-            backgroundImage: "url('/images/contact_phone.png')",
+            backgroundImage: "url('/images/contact_phone.webp')",
             backgroundSize: "cover",
             backgroundPosition: "top",
             backgroundRepeat: "no-repeat",
         }}>
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight z-10 px-4 sm:px-6 md:px-10 lg:px-30">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight z-10 px-6 sm:px-10 md:px-20">
               {t("titleLabel1")} <span className="text-primary">
                 {t("titleLabel2")}
               </span>
             </h1>
         </div>
 
-        <div className="w-full relative flex items-center md:flex-row flex-col justify-between px-6 md:px-4 py-10 max-w-10xl mx-auto overflow-hidden">
-          <div className="flex flex-col gap-6 px-4 sm:px-6 md:px-10 lg:px-30 py-10 w-full md:w-auto">
+        <div className="w-full relative flex items-center md:flex-row flex-col justify-center py-20 overflow-hidden">
+          <div className="flex flex-col gap-6 px-6 sm:px-10 md:px-20 py-10 w-full md:w-auto">
             <h2 className="text-xl md:text-3xl font-bold text-black leading-tight">
                {t("titleLabel3")} <span className="text-primary">
                  {t("titleLabel4")}
@@ -45,21 +45,21 @@ export default function ContactPage() {
 
             {/* Support Hours */}
             <div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-black">
+              <h3 className="text-base sm:text-lg md:text-2xl font-semibold text-black">
                  {t("titleLabel5")} <span className="text-primary"> {t("titleLabel6")}</span>:
               </h3>
-              <p className="text-text-color md:text-lg mt-1">
+              <p className="text-text-color text-sm sm:text-md mt-1">
                 {t("time")}
               </p>
-              <p className="text-text-color md:text-lg mt-1">
+              <p className="text-text-color text-sm sm:text-md mt-1">
                 ({t("closeTime")})
               </p>
             </div>
           </div>
 
-          <div className="w-full relative h-[300px] md:h-[350px] lg:h-[450px] md:w-1/2 rounded-2xl overflow-hidden">
+          <div className="relative rounded-2xl w-[90%] h-[300px] md:w-1/2 lg:w-[500px] sm:h-[350px] overflow-hidden">
             <Image
-              src="/images/contact_person.png" // replace with actual image path
+              src="/images/contact_person.webp" // replace with actual image path
               alt="Customer Support"
               fill
               priority

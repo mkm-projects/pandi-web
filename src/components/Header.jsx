@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/select";
 import { setUserLocale } from "@/services/locale";
 import { Call, Menu } from "iconsax-reactjs";
+import { XIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -33,7 +34,7 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-sm w-full sticky top-0 z-50">
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-14 py-4 flex items-center justify-between">
+      <div className="mx-auto relative w-full px-4 sm:px-6 lg:px-14 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
           <Image
@@ -106,45 +107,48 @@ export default function Header() {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="lg:hidden p-2 rounded focus:outline-none cursor-pointer"
             >
-              <Menu size="24" color="#000" />
+              {
+                isMobileMenuOpen ? (<XIcon size="24" color="#000" />) : (
+                  <Menu size="24" color="#000" />
+                )
+              }
             </button>
           </div>
         </div>
-      </div>
 
-      {/* Mobile Navigation Panel */}
+         {/* Mobile Navigation Panel */}
       {isMobileMenuOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-3 bg-white border-t border-gray-200">
+        <div className="md:hidden px-4 pb-4 space-y-3 bg-white border-t border-gray-200 shadow absolute top-full left-0 w-full">
           <Link
             href="/"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block text-[#D5202C] font-semibold mt-3"
+            className={`block ${path === '/' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'} mt-3`}
           >
             Home
           </Link>
           <Link
             href="/about"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block text-gray-700 hover:text-[#D5202C]"
+            className={`block ${path === '/about' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
           >
             About Us
           </Link>
           <Link
             href="/products"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block text-gray-700 hover:text-[#D5202C]"
+            className={`block ${path === '/products' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
           >
             Products
           </Link>
           <Link
             href="/contact"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block text-gray-700 hover:text-[#D5202C]"
+            className={`block ${path === '/contact' ? 'text-primary font-semibold' : 'text-gray-700 hover:text-primary'}`}
           >
             Contact
           </Link>
 
-          <div className="relative">
+          <div className="relative hidden">
             <Select value={userLocale} onValueChange={handleLocaleChange}>
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Language" />
@@ -158,6 +162,9 @@ export default function Header() {
           </div>
         </div>
       )}
+      </div>
+
+     
     </header>
   );
 }

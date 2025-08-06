@@ -27,7 +27,7 @@ export function BrandSection() {
                 src={item.image}
                 alt={item.key}
                 fill
-                objectFit="contain"
+                className="object-contain"
               />
             </div>
           </div>

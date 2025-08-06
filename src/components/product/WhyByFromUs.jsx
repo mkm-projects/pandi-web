@@ -1,9 +1,9 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
-export function WhyByFromUs() {
+export function WhyByFromUs({reasons}) {
   const t = useTranslations("ProductPage.WhyByFromUs");
-  const reasons = t.raw("reasons");
+  // const reasons = t.raw("reasons");
 
   return (
     <section className="py-12 md:py-16">

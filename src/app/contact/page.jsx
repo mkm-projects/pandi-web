@@ -19,9 +19,9 @@ export default function ContactPage() {
             </h1>
         </div>
 
-        <div className="w-full relative flex items-center md:flex-row flex-col justify-center py-20 overflow-hidden">
-          <div className="flex flex-col gap-6 px-6 sm:px-10 md:px-20 py-10 w-full md:w-auto">
-            <h2 className="text-xl md:text-3xl font-bold text-black leading-tight">
+        <div className="w-full relative flex items-center lg:flex-row flex-col justify-center py-10 sm:py-20 overflow-hidden px-10 gap-5 lg:gap-30">
+          <div className="flex flex-col gap-6 py-10 w-full lg:w-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-black leading-tight">
                {t("titleLabel3")} <span className="text-primary">
                  {t("titleLabel4")}
                </span>
@@ -30,7 +30,7 @@ export default function ContactPage() {
             {/* Phone */}
             <div className="flex items-center gap-3 text-lg text-gray-800">
               <PhoneIcon size="28" className="text-secondary" />
-              <span className="font-normal text-lg md:text-xl text-text-color">
+              <span className="font-normal text-base md:text-xl text-text-color">
                  {t("phone")}
               </span>
             </div>
@@ -38,26 +38,26 @@ export default function ContactPage() {
             {/* Email */}
             <div className="flex items-center gap-3 text-lg text-gray-800">
               <MailIcon size="28" className="text-secondary" />
-              <span className="font-normal text-lg md:text-xl text-text-color">
+              <span className="font-normal text-base md:text-xl text-text-color">
                 {t("mail")}
               </span>
             </div>
 
             {/* Support Hours */}
             <div>
-              <h3 className="text-base sm:text-lg md:text-2xl font-semibold text-black">
+              <h3 className="text-lg sm:text-lg md:text-2xl font-semibold text-black">
                  {t("titleLabel5")} <span className="text-primary"> {t("titleLabel6")}</span>:
               </h3>
-              <p className="text-text-color text-sm sm:text-md mt-1">
+              <p className="text-text-color text-base sm:text-md mt-1">
                 {t("time")}
               </p>
-              <p className="text-text-color text-sm sm:text-md mt-1">
+              <p className="text-text-color text-base sm:text-md mt-1">
                 ({t("closeTime")})
               </p>
             </div>
           </div>
 
-          <div className="relative rounded-2xl w-[90%] h-[300px] md:w-1/2 lg:w-[500px] sm:h-[350px] overflow-hidden">
+          <div className="relative rounded-2xl w-full h-[300px] lg:w-[550px] sm:h-[350px] overflow-hidden">
             <Image
               src="/images/contact_person.webp" // replace with actual image path
               alt="Customer Support"

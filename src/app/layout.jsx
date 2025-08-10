@@ -1,8 +1,6 @@
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { NextIntlClientProvider } from "next-intl";
-import { getLocale } from "next-intl/server";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 
@@ -18,9 +16,8 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const locale = await getLocale();
   return (
-    <html lang={locale}>
+    <html lang="en">
       <body className={`${roboto.variable} font-sans antialiased debug-screens`}>
         <div
           style={{
@@ -30,11 +27,9 @@ export default async function RootLayout({ children }) {
             flexDirection: "column",
           }}
         >
-          <NextIntlClientProvider locale={locale}>
             <Header />
             {children}
             <Footer />
-          </NextIntlClientProvider>
         </div>
       </body>
     </html>

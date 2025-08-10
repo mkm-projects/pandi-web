@@ -9,15 +9,20 @@ import { scrollAnimation } from "@/lib/utils";
 import { useEffect } from "react";
 
 export default function Products() {
-      useEffect(() => {
-      scrollAnimation();
-    }, []);
+  useEffect(() => {
+    scrollAnimation();
+  }, []);
   return (
     <>
       <ProductHeroSection />
       <ProductDetails />
       <KeySellingPointsSection />
-      <CommonQuestions reasons={BUY_FROM_AS_QUESTIONS} title1={"Why"} title2={"Buy From Us?"} imgSrc={"/images/product_car.png"}/>
+      <CommonQuestions
+        reasons={BUY_FROM_AS_QUESTIONS}
+        title1={"Why"}
+        title2={"Buy From Us?"}
+        imgSrc={"/images/product_car.webp"}
+      />
     </>
   );
 }

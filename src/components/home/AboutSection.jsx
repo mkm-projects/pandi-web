@@ -34,10 +34,10 @@ export function AboutSection() {
         <h2 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-[100%] text-center capitalize mb-4">
           {t("about")} <span className="text-primary">{t("us")}</span>
         </h2>
-        <p className="text-gray-700 font-light text-base md:text-xl leading-relaxed fadeIn mb-6">
+        <p className="text-gray-700 font-light text-base md:text-xl leading-relaxed mb-6 fadeIn">
           {t("p1")}
         </p>
-        <p className="text-gray-700 font-light text-base md:text-xl leading-relaxed fadeIn mb-8">
+        <p className="text-gray-700 font-light text-base md:text-xl leading-relaxed mb-8">
           {t("p2")}
         </p>
         <Link href="/about">

@@ -11,7 +11,7 @@ export function BrandSection() {
         <h2 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-tight capitalize">
           {t("brand")} <span className="text-primary">{t("trus")}</span>
         </h2>
-        <p className="text-md md:text-xl font-light text-gray-700 leading-relaxed fadeIn max-w-2xl mt-6 md:mt-8">
+        <p className="text-base md:text-xl font-light text-gray-700 leading-relaxed fadeIn max-w-2xl mt-6 md:mt-8">
           {t("p1")}
         </p>
       </div>

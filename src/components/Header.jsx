@@ -1,15 +1,7 @@
 "use client";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { setUserLocale } from "@/services/locale";
 import { Call, Menu } from "iconsax-reactjs";
 import { XIcon } from "lucide-react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -18,17 +10,9 @@ import { useState } from "react";
 export default function Header() {
   const [showNumber, setShowNumber] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const locale = useLocale();
 
   // get current page path
   const path = usePathname();
-
-  const [userLocale, setLocale] = useState(locale); // Default locale
-
-  const handleLocaleChange = (value) => {
-    setLocale(value);
-    setUserLocale(value); // Update the locale in cookies or any storage
-  };
 
   const t = useTranslations("Header.MenuNames");
 
@@ -89,18 +73,17 @@ export default function Header() {
             </div>
 
             {/* Language Selector */}
-            <div className="relative hidden sm:block">
+            {/* <div className="relative hidden sm:block">
               <Select value={userLocale} onValueChange={handleLocaleChange}>
                 <SelectTrigger className="w-[180px]">
                   <SelectValue placeholder="Language" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="en">English</SelectItem>
-                  {/* <SelectItem value="fr">Français</SelectItem> */}
                   <SelectItem value="ar">Arabic</SelectItem>
                 </SelectContent>
               </Select>
-            </div>
+            </div> */}
 
             {/* Mobile Menu Button */}
             <button
@@ -148,18 +131,17 @@ export default function Header() {
             Contact
           </Link>
 
-          <div className="relative hidden">
+          {/* <div className="relative hidden">
             <Select value={userLocale} onValueChange={handleLocaleChange}>
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Language" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="en">English</SelectItem>
-                {/* <SelectItem value="fr">Français</SelectItem> */}
                 <SelectItem value="ar">Arabic</SelectItem>
               </SelectContent>
             </Select>
-          </div>
+          </div> */}
         </div>
       )}
       </div>

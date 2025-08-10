@@ -12,7 +12,7 @@ export default function ProductSection() {
         <h2 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-[100%] capitalize">
           {t("explore")} <span className="text-primary">{t("products")}</span>
         </h2>
-        <p className="text-gray-700 text-base md:text-xl font-light leading-relaxed fadeIne max-w-2xl mt-6 md:mt-8">
+        <p className="text-gray-700 text-base md:text-xl font-light leading-relaxed max-w-2xl mt-6 md:mt-8 animate-fadeIn delay-100">
           {t("p1")}
         </p>
       </div>

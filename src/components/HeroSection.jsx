@@ -19,7 +19,7 @@ export default function HeroSection() {
               <br />
               {t("title5")}
             </h1>
-            <p className="text-white font-light text-md sm:text-xl leading-[30px] sm:leading-[34.5px] tracking-wide capitalize mt-6 max-w-3xl fadeIn delay-100">
+            <p className="text-white font-light text-base sm:text-xl leading-relaxed sm:leading-relaxed tracking-wide capitalize mt-6 max-w-3xl animate-fadeIn delay-100">
               {t("description")}
             </p>
 

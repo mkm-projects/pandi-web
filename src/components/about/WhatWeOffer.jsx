@@ -17,9 +17,9 @@ export function WhatWeOffer() {
           alt="Offer spare part"
           width={200}
           height={200}
-          className="translate-y-3 h-[100px] w-[100px] lg:w-auto"
+          className="translate-y-3 h-[60px] w-[60px] md:h-[80px] md:w-[80px] lg:w-auto"
         />
-        <h2 className="text-3xl md:text-4xl font-bold text-secondary w-full">
+        <h2 className="text-lg sm:text-xl md:text-3xl font-bold text-secondary w-full fadeIn">
           {t("titleLabel1")} <span className="text-white">
             {t("titleLabel2")}
           </span>
@@ -29,7 +29,7 @@ export function WhatWeOffer() {
           alt="Offer spare part"
           width={200}
           height={200}
-          className="-translate-y-3 h-[100px] w-[100px] lg:w-auto"
+          className="-translate-y-3 h-[60px] w-[60px] md:h-[80px] md:w-[80px] lg:w-auto"
         />
         </div>
       </div>
@@ -41,8 +41,8 @@ export function WhatWeOffer() {
             key={index}
             className="bg-card-custom-1 text-gray-900 rounded-xl py-10 px-6 transition"
           >
-            <h3 className="text-xl md:text-2xl font-bold mb-2 text-secondary">{item.title}</h3>
-            <p className="md:text-xl font-light leading-relaxed text-text-color">
+            <h3 className="text-lg md:text-xl font-bold mb-2 text-secondary fadeIn delay-75">{item.title}</h3>
+            <p className="md:text-lg text-sm font-light leading-relaxed text-text-color fadeIn delay-100">
               {item.description}
             </p>
           </div>

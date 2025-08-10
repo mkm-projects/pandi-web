@@ -5,6 +5,7 @@ export const SocialIcon = ({
   text = "",
 }) => (
   <a
+    aria-label={text}
     href={href}
     target="_blank"
     rel="noreferrer"

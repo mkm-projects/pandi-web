@@ -69,6 +69,7 @@ export default function Footer() {
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                title="pandi google map"
               ></iframe>
 
               <div className="relative overflow-hidden h-full w-full opacity-0 lg:opacity-100">

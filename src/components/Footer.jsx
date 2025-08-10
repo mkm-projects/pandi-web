@@ -42,21 +42,25 @@ export default function Footer() {
                   icon={Whatsapp}
                   hoverColor="hover:text-green-400"
                   href="https://wa.me/918606449640"
+                  label="WhatsApp"
                 />
                 <SocialIcon
                   icon={Facebook}
                   hoverColor="hover:text-blue-500"
                   href="https://facebook.com"
+                  label="Facebook"
                 />
                 <SocialIcon
                   icon={Instagram}
                   hoverColor="hover:text-pink-500"
                   href="https://instagram.com"
+                  label="Instagram"
                 />
                 <SocialIcon
                   icon={Youtube}
                   hoverColor="hover:text-red-500"
                   href="https://youtube.com"
+                  label="Youtube"
                 />
               </div>
             </div>

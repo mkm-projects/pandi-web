@@ -46,7 +46,7 @@ export function WhatWeOffer() {
       </div>
 
       {/* Card Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-10xl mx-auto py-10 px-8 sm:px-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-10xl mx-auto py-10 md:py-15 px-8 sm:px-10">
         {offerList.map((item, index) => (
           <div
             key={index}

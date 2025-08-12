@@ -27,9 +27,9 @@ export function AboutSection() {
       </div>
 
       {/* About Us Section */}
-      <div className="max-w-3xl mx-auto mt-10 px-4 py-4 sm:py-8 md:py-14">
+      <div className="max-w-3xl mx-auto px-4 py-6 sm:py-8 md:py-20">
         <h2 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-[100%] text-center capitalize mb-4 fadeIn">
-          About<span className="text-primary">Us</span>
+          About<span className="text-primary"> Us</span>
         </h2>
         <p className="text-gray-700 font-light text-base md:text-xl leading-relaxed mb-6 animate-fadeIn delay-100 fadeIn">
           At Pandi Auto Spare, we specialize in providing high-quality spare

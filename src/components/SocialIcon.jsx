@@ -3,8 +3,10 @@ export const SocialIcon = ({
   hoverColor = "text-white",
   href = "#",
   text = "",
+  label = "",
 }) => (
   <a
+    aria-label={label}
     href={href}
     target="_blank"
     rel="noreferrer"

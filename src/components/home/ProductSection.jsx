@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { productList } from "@/lib/data/products";
+import Image from "next/image";
 
 export default function ProductSection() {
   return (

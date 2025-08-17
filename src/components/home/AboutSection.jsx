@@ -1,5 +1,5 @@
-import KeySellingPointsSection from "../common/KeySellingPointsSection";
 import Link from "next/link";
+import KeySellingPointsSection from "../common/KeySellingPointsSection";
 
 export function AboutSection() {
   return (

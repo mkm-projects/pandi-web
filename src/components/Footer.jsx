@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="text-white bg-cover bg-center w-full h-full overflow-hidden bg-secondary">
         <div className="relative z-10">
           <div className="flex flex-col lg:flex-row justify-between gap-4 md:gap-6 relative">
-            <div className="flex-1 mt-5 px-28 py-20 z-10">
+            <div className="flex-1 mt-5 px-10 py-10 sm:px-28 sm:py-20 z-10">
               <img
                 src="/images/logo.png"
                 alt="Pandi Auto Spares"

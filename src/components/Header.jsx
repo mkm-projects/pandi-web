@@ -26,6 +26,7 @@ export default function Header() {
             className="object-contain"
             priority
           />
+          <span className="sr-only">Pandi Web Homepage</span>
         </Link>
 
         <div className="flex items-center gap-14">

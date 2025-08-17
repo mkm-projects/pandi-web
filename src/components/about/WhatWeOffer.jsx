@@ -1,7 +1,5 @@
-import Image from "next/image";
 
 export function WhatWeOffer() {
-  // Hardcoded offer list from en.json
   const offerList = [
     {
       title: "Wide Range of Products",
@@ -21,46 +19,33 @@ export function WhatWeOffer() {
   ];
 
   return (
-    <section className="text-white">
-      {/* Header with background image */}
-      <div className="bg-cover bg-center text-center bg-primary mx-auto overflow-hidden">
-        <div className="flex justify-between items-center max-w-9xl mx-auto">
-          <Image
-            src="/images/offer_bg_1.svg"
-            alt="Offer spare part"
-            width={200}
-            height={200}
-            className="translate-y-3 h-[60px] w-[60px] md:h-[80px] md:w-[80px] lg:w-auto"
-          />
-          <h2 className="text-2xl md:text-3xl font-bold text-secondary w-full fadeIn">
-            What We <span className="text-white">Offer</span>
-          </h2>
-          <Image
-            src="/images/offer_bg_2.svg"
-            alt="Offer spare part"
-            width={200}
-            height={200}
-            className="-translate-y-3 h-[60px] w-[60px] md:h-[80px] md:w-[80px] lg:w-auto"
-          />
-        </div>
+    <section className="text-white" aria-labelledby="offer-heading">
+      {/* Header */}
+      <div className="bg-primary text-center py-6">
+        <h2
+          id="offer-heading"
+          className="text-3xl md:text-4xl font-bold text-secondary fadeIn"
+        >
+          What We <span className="text-white">Offer</span>
+        </h2>
       </div>
 
-      {/* Card Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-10xl mx-auto py-10 md:py-15 px-8 sm:px-10">
+      {/* Offers */}
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto py-12 px-8">
         {offerList.map((item, index) => (
-          <div
+          <li
             key={index}
-            className="bg-card-custom-1 text-gray-900 rounded-xl py-10 px-6 transition"
+            className="bg-card-custom-1 text-gray-900 rounded-xl p-8 transition"
           >
-            <h3 className="text-lg md:text-xl font-bold mb-2 text-secondary fadeIn delay-75">
+            <h3 className="text-xl font-bold mb-2 text-secondary fadeIn">
               {item.title}
             </h3>
-            <p className="md:text-lg text-sm font-light leading-relaxed text-text-color fadeIn delay-100">
+            <p className="text-gray-700 text-base font-light leading-relaxed fadeIn">
               {item.description}
             </p>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

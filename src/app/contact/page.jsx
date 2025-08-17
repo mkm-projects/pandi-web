@@ -43,7 +43,7 @@ export default function ContactPage() {
           <div className="flex items-center gap-3 text-lg text-gray-800">
             <MailIcon size="28" className="text-secondary" />
             <span className="font-normal text-base md:text-xl text-text-color">
-              support@example.com
+              pandispare@gmail.com
             </span>
           </div>
 
@@ -53,7 +53,7 @@ export default function ContactPage() {
               Support <span className="text-primary">Hours</span>:
             </h3>
             <p className="text-text-color text-base sm:text-md mt-1">
-              9:00 AM – 6:00 PM
+              9:00 AM – 7:00 PM
             </p>
             <p className="text-text-color text-base sm:text-md mt-1">
               (Closed on Sundays)
@@ -101,8 +101,8 @@ function SocialLinks() {
           alt="instagram"
         />
       ),
-      text: "www.facebook.com",
-      url: "https://www.facebook.com",
+       text: "www.instagram.com",
+      url: "https://www.instagram.com/pandiweb",
     },
     {
       icon: (
@@ -113,8 +113,8 @@ function SocialLinks() {
           alt="facebook"
         />
       ),
-      text: "www.instagram.com",
-      url: "https://www.instagram.com",
+         text: "www.facebook.com",
+      url: "https://www.facebook.com/pandiweb",
     },
     {
       icon: (
@@ -126,7 +126,7 @@ function SocialLinks() {
         />
       ),
       text: "www.youtube.com",
-      url: "https://www.youtube.com",
+      url: "https://www.youtube.com/@pandiweb",
     },
   ];
 
@@ -137,6 +137,7 @@ function SocialLinks() {
           key={index}
           href={link.url}
           target="_blank"
+          aria-label={`Visit our ${link.text} page`}
           rel="noopener noreferrer"
           className="flex flex-col justify-center bg-[#F4F4F4] rounded-2xl shadow-sm px-6 py-12 items-start hover:shadow-lg transition-all"
         >

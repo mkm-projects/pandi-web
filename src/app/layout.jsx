@@ -11,8 +11,9 @@ const roboto = Roboto({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://pandi-web.vercel.app"),
   title: "Pandi Web — Automotive Spare Parts",
-  description: "OEM & aftermarket spare parts from trusted brands — fast delivery, competitive prices, and expert support to keep your vehicle running reliably."
+  description: "OEM & aftermarket spare parts from trusted brands — fast delivery, competitive prices, and expert support to keep your vehicle running reliably.",
 };
 
 

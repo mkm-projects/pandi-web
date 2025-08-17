@@ -3,53 +3,40 @@ import Image from "next/image";
 
 export default function ProductSection() {
   return (
-    <section className="py-15 md:py-20 bg-white">
+    <section className="py-15 md:py-20 bg-white" aria-labelledby="products-heading">
       <div className="px-4 max-w-6xl mx-auto">
-        <h2 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-[100%] capitalize fadeIn">
+        <h2 id="products-heading" className="font-bold text-3xl sm:text-5xl md:text-6xl fadeIn">
           Explore Our <span className="text-primary">Products</span>
         </h2>
-        <p className="text-gray-700 text-base md:text-xl font-light leading-relaxed max-w-2xl mt-6 md:mt-8 fadeIn">
+        <p className="text-gray-700 text-base md:text-xl max-w-2xl mt-6 fadeIn">
           Browse our wide range of high-quality spare parts designed to fit
-          perfectly and perform reliably. Whether you’re upgrading, replacing,
-          or repairing — we’ve got the right part for you.
+          perfectly and perform reliably.
         </p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 px-4 max-w-6xl mx-auto mt-8 md:mt-16 mb-10 md:mb-20 ">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-8 px-4 max-w-6xl mx-auto mt-8">
         {productList.map((item) => (
-          <div
+          <article
             key={item.key}
-            className="bg-gray-100 rounded-xl p-3 md:p-6 text-center shadow-sm hover:shadow-lg transition-shadow duration-300 fadeIn"
+            className="bg-gray-100 rounded-xl p-6 text-center shadow-sm hover:shadow-lg transition fadeIn"
           >
-            <div className="relative w-24 sm:w-28 md:w-32 lg:w-36 h-20 sm:h-24 md:h-28 lg:h-32 mx-auto mb-2 md:mb-4">
-              <Image
-                src={item.image}
-                alt={item.key}
-                fill
-                className="object-contain"
-              />
+            <div className="relative w-28 h-24 mx-auto mb-4">
+              <Image src={item.image} alt={`${item.key} spare part`} fill className="object-contain" />
             </div>
-            <h3 className="text-sm sm:text-base md:text-lg lg:text-xl font-light leading-tight text-center capitalize font-roboto">
-              {item.key}
-            </h3>
-          </div>
+            <h3 className="text-lg font-light capitalize">{item.key}</h3>
+          </article>
         ))}
       </div>
 
-      <div className="relative min-h-[150px] md:h-[260px] flex items-center justify-center text-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-90"
-          style={{ backgroundImage: `url('/images/bg2.png')` }}
-        ></div>
+      {/* Callout */}
+      <div className="relative min-h-[150px] md:h-[260px] flex items-center justify-center text-center overflow-hidden mt-12">
+        <div className="absolute inset-0 bg-cover bg-center opacity-90" style={{ backgroundImage: `url('/images/bg2.png')` }}></div>
         <div className="absolute inset-0 bg-[#17181C]/70" />
-
-        <div className="relative z-10 px-4 sm:px-6 py-6 sm:py-8 rounded text-white max-w-full">
-          <h2 className="font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight capitalize break-words fadeIn">
-            Everything Your Vehicle Needs
+        <div className="relative z-10 px-6 py-8 text-white">
+          <h2 className="font-bold text-4xl sm:text-5xl capitalize fadeIn">
+            Everything Your Vehicle Needs <br />
+            <span className="text-primary">All In One Place</span>
           </h2>
-          <h3 className="font-bold text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight capitalize mt-3 sm:mt-4 md:mt-6 break-words fadeIn">
-            All In One <span className="text-primary">Place</span>
-          </h3>
         </div>
       </div>
     </section>

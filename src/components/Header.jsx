@@ -13,61 +13,80 @@ export default function Header() {
   // get current page path
   const path = usePathname();
 
-
   return (
-    <header className="bg-white shadow-sm w-full sticky top-0 z-50">
+    <header className="bg-white shadow-sm w-full sticky top-0 z-50" role="banner">
       <div className="mx-auto relative w-full px-4 sm:px-6 lg:px-14 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/">
+        <Link href="/" aria-label="Go to Pandi Web homepage">
           <Image
             src="/images/logo.png"
-            alt="Logo"
+            alt="Pandi Web Logo - Home"
             width={120}
             height={50}
             className="object-contain"
+            priority
           />
         </Link>
 
         <div className="flex items-center gap-14">
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <Link
-              href="/"
-              className={`${
-                path === "/" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
-              }`}
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className={`${
-                path === "/about" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
-              }`}
-            >
-              About Us
-            </Link>
-            <Link
-              href="/products"
-              className={`${
-                path === "/products" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
-              }`}
-            >
-              Products
-            </Link>
-            <Link
-              href="/contact"
-              className={`${
-                path === "/contact" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
-              }`}
-            >
-              Contact
-            </Link>
+          <nav
+            className="hidden lg:flex items-center space-x-8"
+            aria-label="Main navigation"
+          >
+            <ul className="flex items-center space-x-8">
+              <li>
+                <Link
+                  href="/"
+                  aria-label="Navigate to Home page"
+                  className={`${
+                    path === "/" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
+                  }`}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  aria-label="Learn more About Us"
+                  className={`${
+                    path === "/about" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
+                  }`}
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/products"
+                  aria-label="View our Products"
+                  className={`${
+                    path === "/products" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
+                  }`}
+                >
+                  Products
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  aria-label="Contact us"
+                  className={`${
+                    path === "/contact" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
+                  }`}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </nav>
 
           {/* Right Side (Call & Menu) */}
           <div className="flex items-center gap-2 md:gap-4">
-            <div
+            <button
+              type="button"
+              aria-label="Show phone number"
               className={`bg-primary text-white px-2 sm:px-4 py-2 rounded-full flex items-center text-sm font-medium whitespace-nowrap cursor-pointer ${
                 showNumber ? "gap-2" : "gap-0.5"
               }`}
@@ -84,24 +103,13 @@ export default function Header() {
               </span>
 
               <span className="hidden sm:block">+91 8606449640</span>
-            </div>
-
-            {/* Language Selector */}
-            {/* <div className="relative hidden sm:block">
-              <Select value={userLocale} onValueChange={handleLocaleChange}>
-                <SelectTrigger className="w-[180px]">
-                  <SelectValue placeholder="Language" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="en">English</SelectItem>
-                  <SelectItem value="ar">Arabic</SelectItem>
-                </SelectContent>
-              </Select>
-            </div> */}
+            </button>
 
             {/* Mobile Menu Button */}
             <button
+              type="button"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
               className="lg:hidden p-2 rounded focus:outline-none cursor-pointer"
             >
               {isMobileMenuOpen ? (
@@ -115,9 +123,13 @@ export default function Header() {
 
         {/* Mobile Navigation Panel */}
         {isMobileMenuOpen && (
-          <div className="md:hidden px-4 pb-4 space-y-3 bg-white border-t border-gray-200 shadow absolute top-full left-0 w-full">
+          <nav
+            className="md:hidden px-4 pb-4 space-y-3 bg-white border-t border-gray-200 shadow absolute top-full left-0 w-full"
+            aria-label="Mobile navigation"
+          >
             <Link
               href="/"
+              aria-label="Navigate to Home page"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`block ${
                 path === "/" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
@@ -127,6 +139,7 @@ export default function Header() {
             </Link>
             <Link
               href="/about"
+              aria-label="Learn more About Us"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`block ${
                 path === "/about" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
@@ -136,6 +149,7 @@ export default function Header() {
             </Link>
             <Link
               href="/products"
+              aria-label="View our Products"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`block ${
                 path === "/products" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
@@ -145,6 +159,7 @@ export default function Header() {
             </Link>
             <Link
               href="/contact"
+              aria-label="Contact us"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`block ${
                 path === "/contact" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
@@ -152,20 +167,8 @@ export default function Header() {
             >
               Contact
             </Link>
-
-          {/* <div className="relative hidden">
-            <Select value={userLocale} onValueChange={handleLocaleChange}>
-              <SelectTrigger className="w-full">
-                <SelectValue placeholder="Language" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="en">English</SelectItem>
-                <SelectItem value="ar">Arabic</SelectItem>
-              </SelectContent>
-            </Select>
-          </div> */}
-        </div>
-      )}
+          </nav>
+        )}
       </div>
     </header>
   );

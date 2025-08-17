@@ -15,7 +15,7 @@ export default function ProductSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 px-4 max-w-6xl mx-auto mt-8 md:mt-16 mb-8 md:mb-20 ">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 px-4 max-w-6xl mx-auto mt-8 md:mt-16 mb-10 md:mb-20 ">
         {productList.map((item) => (
           <div
             key={item.key}

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function BrandSection() {
   return (
-    <section className="py-3 md:py-6 bg-white">
+    <section className="py-1 md:py-6 bg-white">
       <div className="px-4 max-w-6xl mx-auto">
         <h2 className="font-bold text-3xl sm:text-5xl md:text-6xl leading-tight capitalize fadeIn">
           Brands We <span className="text-primary">Trust</span>

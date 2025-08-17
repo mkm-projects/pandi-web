@@ -1,19 +1,18 @@
-"use client";
-
 import { CommonQuestions } from "@/components/common/CommonQuestions";
 import KeySellingPointsSection from "@/components/common/KeySellingPointsSection";
+import MainLayout from "@/components/mainLayout";
 import ProductDetails from "@/components/product/ProductDetails";
 import ProductHeroSection from "@/components/product/ProductHeroSection";
 import { BUY_FROM_AS_QUESTIONS } from "@/lib/data/common";
-import { scrollAnimation } from "@/lib/utils";
-import { useEffect } from "react";
+
+export const metadata = {
+  title: "Pandi Web — Spare Parts: Engine, Brakes & More",
+  description: "Explore engine, brake, electronic, lighting, body, and lubrication parts — OEM and trusted aftermarket options from brands like Bosch, NGK, TVS, and Exide."
+};
 
 export default function Products() {
-  useEffect(() => {
-    scrollAnimation();
-  }, []);
   return (
-    <>
+    <MainLayout>
       <ProductHeroSection />
       <ProductDetails />
       <KeySellingPointsSection />
@@ -23,6 +22,6 @@ export default function Products() {
         title2={"Buy From Us?"}
         imgSrc={"/images/product_car.webp"}
       />
-    </>
+    </MainLayout>
   );
 }

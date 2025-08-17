@@ -11,9 +11,10 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "Pandi Web",
-  description: "Pandi Web - Your One-Stop Shop for Automotive Spare Parts",
+  title: "Pandi Web — Automotive Spare Parts",
+  description: "OEM & aftermarket spare parts from trusted brands — fast delivery, competitive prices, and expert support to keep your vehicle running reliably."
 };
+
 
 export default async function RootLayout({ children }) {
   return (

@@ -1,6 +1,11 @@
 import { MailIcon, PhoneIcon } from "lucide-react";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Contact Pandi Web — Orders & Support",
+  description: "Contact Pandi Web for orders and customer support. Call +91 8606449640 or email pandispare@gmail.com. Support hours Mon–Sat 9:00 AM–7:00 PM."
+};
+
 export default function ContactPage() {
   return (
     <section className="relative text-white flex flex-col items-center justify-start h-full min-h-screen">

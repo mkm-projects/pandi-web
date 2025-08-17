@@ -32,7 +32,7 @@ export function WhatWeOffer() {
             height={200}
             className="translate-y-3 h-[60px] w-[60px] md:h-[80px] md:w-[80px] lg:w-auto"
           />
-          <h2 className="text-lg sm:text-xl md:text-3xl font-bold text-secondary w-full fadeIn">
+          <h2 className="text-2xl md:text-3xl font-bold text-secondary w-full fadeIn">
             What We <span className="text-white">Offer</span>
           </h2>
           <Image

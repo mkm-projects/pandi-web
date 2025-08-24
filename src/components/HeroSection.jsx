@@ -7,7 +7,7 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 lg:w-[65%] md:w-[90%] w-full px-6 sm:px-10 md:px-20 py-15 sm:py-24">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight fadeIn">
-          Best Quality <span className="text-primary">Spare Parts in</span> Malappuram - Your Trusted Destination{" "}
+          High Quality <span className="text-primary">Spare Parts in</span> Malappuram - Your Trusted Destination{" "}
           <span className="text-primary">in Kerala</span>
         </h1>
 

@@ -13,10 +13,10 @@ const roboto = Roboto({
 export const metadata = {
   metadataBase: new URL("https://pandi-web.vercel.app"),
   title: {
-    default: "Best Quality Spare Parts in Malappuram, Kerala",
+    default: "High Quality Spare Parts in Malappuram, Kerala",
   },
   description:
-    "Best Quality Spare Parts Malappuram, Kerala. Trusted brands, fast delivery, competitive prices, and expert support to keep your vehicle running reliably.",
+    "High Quality Spare Parts Malappuram, Kerala. Trusted brands, fast delivery, competitive prices, and expert support to keep your vehicle running reliably.",
   keywords: [
     "car spare parts",
     "auto parts Malappuram",
@@ -28,9 +28,9 @@ export const metadata = {
   ],
   authors: [{ name: "Pandi Auto Spare" }],
   openGraph: {
-    title: "Best Quality Spare Parts in Malappuram, Kerala",
+    title: "High Quality Spare Parts in Malappuram, Kerala",
     description:
-      "Best Quality Spare Parts Malappuram, Kerala. Trusted brands, fast delivery, competitive prices, and expert support to keep your vehicle running reliably.",
+      "High Quality Spare Parts Malappuram, Kerala. Trusted brands, fast delivery, competitive prices, and expert support to keep your vehicle running reliably.",
     url: "https://pandi-web.vercel.app",
     siteName: "Pandi Web",
     images: [
@@ -46,7 +46,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Quality Spare Parts in Malappuram, Kerala",
+    title: "High Quality Spare Parts in Malappuram, Kerala",
     description:
       "Trusted OEM & aftermarket car spare parts in Malappuram, Kerala.",
     images: ["https://pandi-web.vercel.app/images/PandiMetadataImage.webp"],

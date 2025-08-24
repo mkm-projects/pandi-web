@@ -35,7 +35,7 @@ export const metadata = {
     siteName: "Pandi Web",
     images: [
       {
-        url: "/images/PandiMetadataImage.webp",
+        url: "https://pandi-web.vercel.app/images/PandiMetadataImage.webp",
         width: 1200,
         height: 630,
         alt: "Pandi Auto Spare Parts Logo",
@@ -49,7 +49,7 @@ export const metadata = {
     title: "Best Quality Spare Parts in Malappuram, Kerala",
     description:
       "Trusted OEM & aftermarket car spare parts in Malappuram, Kerala.",
-    images: ["/images/PandiMetadataImage.webp"],
+    images: ["https://pandi-web.vercel.app/images/PandiMetadataImage.webp"],
     site: "@pandiweb",
   },
   robots: {

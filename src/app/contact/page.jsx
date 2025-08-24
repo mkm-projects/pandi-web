@@ -13,7 +13,7 @@ export default function ContactPage() {
       <div
         className="flex items-center relative w-full h-full min-h-[200px]"
         style={{
-          backgroundImage: "url('/images/contact_phone.webp')",
+          backgroundImage: "url('/images/contact_phone_AutosparePartsinPerinthamlmannaKeralaPandiSpares.webp')",
           backgroundSize: "cover",
           backgroundPosition: "top",
           backgroundRepeat: "no-repeat",
@@ -64,7 +64,7 @@ export default function ContactPage() {
         {/* Image */}
         <div className="relative rounded-2xl w-full h-[300px] lg:w-[550px] sm:h-[350px] overflow-hidden">
           <Image
-            src="/images/contact_person.webp"
+            src="/images/contact_person_AutosparePartsinPerinthamlmannaKeralaPandiSpares.webp"
             alt="Customer Support"
             fill
             priority
@@ -83,10 +83,10 @@ function SocialLinks() {
     {
       icon: (
         <Image
-          src={"/images/whatsapp.png"}
+          src={"/images/whatsapp_AutosparePartsinPerinthamlmannaKeralaPandiSpares"}
           height={28}
           width={28}
-          alt="whatsapp"
+          alt="whatsapp_logo"
         />
       ),
       text: "+91 8606449640",
@@ -95,10 +95,10 @@ function SocialLinks() {
     {
       icon: (
         <Image
-          src={"/images/instagram.png"}
+          src={"/images/instagram.webp"}
           height={28}
           width={28}
-          alt="instagram"
+          alt="instagram_logo"
         />
       ),
        text: "www.instagram.com",
@@ -107,10 +107,10 @@ function SocialLinks() {
     {
       icon: (
         <Image
-          src={"/images/facebook.png"}
+          src={"/images/facebook_AutosparePartsinPerinthamlmannaKeralaPandiSpares.webp"}
           height={28}
           width={28}
-          alt="facebook"
+          alt="facebook_logo"
         />
       ),
          text: "www.facebook.com",
@@ -119,10 +119,10 @@ function SocialLinks() {
     {
       icon: (
         <Image
-          src={"/images/youtube.png"}
+          src={"/images/youtube_AutosparePartsinPerinthamlmannaKeralaPandiSpares.webp"}
           height={28}
           width={28}
-          alt="youtube"
+          alt="youtube_logo"
         />
       ),
       text: "www.youtube.com",
@@ -136,6 +136,7 @@ function SocialLinks() {
         <a
           key={index}
           href={link.url}
+          hrefLang="en"
           target="_blank"
           aria-label={`Visit our ${link.text} page`}
           rel="noopener noreferrer"

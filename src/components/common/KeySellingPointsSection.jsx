@@ -18,7 +18,7 @@ function KeySellingPointsSection() {
       <ul className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 px-4 text-center">
         <li className="flex flex-col items-center">
           <img
-            src="/images/parts.png"
+            src="/images/PandiSparesAffordableAutoParts.webp"
             alt="Affordable auto parts icon"
             className="w-10 h-10 mb-3"
           />
@@ -27,7 +27,7 @@ function KeySellingPointsSection() {
 
         <li className="flex flex-col items-center">
           <img
-            src="/images/brand.png"
+            src="/images/TopBrandsInPandiSpares.webp"
             alt="Top brands icon"
             className="w-10 h-10 mb-3"
           />
@@ -36,7 +36,7 @@ function KeySellingPointsSection() {
 
         <li className="flex flex-col items-center">
           <img
-            src="/images/quality.png"
+            src="/images/QualityAutoSparePartsPandiPerinthalmanna.webp"
             alt="Trusted quality icon"
             className="w-10 h-10 mb-3"
           />
@@ -45,7 +45,7 @@ function KeySellingPointsSection() {
 
         <li className="flex flex-col items-center">
           <img
-            src="/images/delivery.png"
+            src="/images/DeliveryPandiMalappuramKerala.webp"
             alt="Secure delivery icon"
             className="w-10 h-10 mb-3"
           />

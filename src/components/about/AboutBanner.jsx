@@ -30,7 +30,7 @@ export function AboutBanner() {
 
       {/* Background Image */}
       <Image
-        src="/images/about-hero-section.webp"
+        src="/images/about-hero-sectionAutosparePartsinPerinthamlmannaKeralaPandiSpares.webp"
         alt="Automotive spare parts background"
         fill
         priority

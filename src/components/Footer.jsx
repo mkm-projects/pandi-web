@@ -17,7 +17,7 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row justify-between gap-4 md:gap-6 relative">
             <div className="flex-1 mt-5 px-10 py-10 sm:px-28 sm:py-20 z-10">
               <img
-                src="/images/logo.png"
+                src="/images/PandiAutoPartsStoreLogo.webp"
                 alt="Pandi Auto Spares"
                 className="w-44 mb-4"
               />
@@ -42,24 +42,29 @@ export default function Footer() {
                   icon={Whatsapp}
                   hoverColor="hover:text-green-400"
                   href="https://wa.me/918606449640"
+                  hrefLang="en"
                   label="WhatsApp"
+                  
                 />
                 <SocialIcon
                   icon={Facebook}
                   hoverColor="hover:text-blue-500"
                   href="https://facebook.com"
+                  hrefLang="en"
                   label="Facebook"
                 />
                 <SocialIcon
                   icon={Instagram}
                   hoverColor="hover:text-pink-500"
                   href="https://instagram.com"
+                  hrefLang="en"
                   label="Instagram"
                 />
                 <SocialIcon
                   icon={Youtube}
                   hoverColor="hover:text-red-500"
                   href="https://youtube.com"
+                  hrefLang="en"
                   label="Youtube"
                 />
               </div>

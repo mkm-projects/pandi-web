@@ -5,11 +5,16 @@ export function BrandSection() {
   return (
     <section className="py-6 bg-white" aria-labelledby="brands-heading">
       <div className="px-4 max-w-6xl mx-auto">
-        <h2 id="brands-heading" className="font-bold text-3xl sm:text-5xl md:text-6xl fadeIn">
+        <h2
+          id="brands-heading"
+          className="font-bold text-3xl sm:text-5xl md:text-6xl fadeIn"
+        >
           Brands We <span className="text-primary">Trust</span>
         </h2>
         <p className="text-base md:text-xl text-gray-700 max-w-2xl mt-6 fadeIn">
-          Browse our trusted brands that deliver high-quality spare parts built for reliability and performance.
+          We partner with top-quality car spare part brands to ensure genuine,
+          reliable, and durable parts for your vehicle. Trust our curated
+          selection for performance, safety, and long-lasting quality.
         </p>
       </div>
 
@@ -20,7 +25,12 @@ export function BrandSection() {
             className="bg-gray-100 rounded-xl p-6 text-center shadow-sm hover:shadow-lg transition"
           >
             <div className="relative w-24 h-12 mx-auto">
-              <Image src={item.image} alt={`${item.key} brand logo`} fill className="object-contain" />
+              <Image
+                src={item.image}
+                alt={`${item.key} brand logo`}
+                fill
+                className="object-contain"
+              />
             </div>
           </li>
         ))}

@@ -8,6 +8,7 @@ export const SocialIcon = ({
   <a
     aria-label={label}
     href={href}
+    hrefLang="en"
     target="_blank"
     rel="noreferrer"
     className="group relative p-4 flex items-center justify-center rounded-full bg-[#202025]"

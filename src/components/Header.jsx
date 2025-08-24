@@ -17,9 +17,9 @@ export default function Header() {
     <header className="bg-white shadow-sm w-full sticky top-0 z-50" role="banner">
       <div className="mx-auto relative w-full px-4 sm:px-6 lg:px-14 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" aria-label="Go to Pandi Web homepage">
+        <Link href="/" hrefLang="en" aria-label="Go to Pandi Web homepage">
           <Image
-            src="/images/logo.png"
+            src="/images/PandiAutoPartsStoreLogo.webp"
             alt="Pandi Web Logo - Home"
             width={120}
             height={50}
@@ -39,6 +39,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
+                  hrefLang="en"
                   aria-label="Navigate to Home page"
                   className={`${
                     path === "/" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
@@ -50,6 +51,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/about"
+                  hrefLang="en"
                   aria-label="Learn more About Us"
                   className={`${
                     path === "/about" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
@@ -61,6 +63,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/products"
+                  hrefLang="en"
                   aria-label="View our Products"
                   className={`${
                     path === "/products" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
@@ -72,6 +75,7 @@ export default function Header() {
               <li>
                 <Link
                   href="/contact"
+                  hrefLang="en"
                   aria-label="Contact us"
                   className={`${
                     path === "/contact" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
@@ -130,6 +134,7 @@ export default function Header() {
           >
             <Link
               href="/"
+              hrefLang="en"
               aria-label="Navigate to Home page"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`block ${
@@ -140,6 +145,7 @@ export default function Header() {
             </Link>
             <Link
               href="/about"
+              hrefLang="en"
               aria-label="Learn more About Us"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`block ${
@@ -150,6 +156,7 @@ export default function Header() {
             </Link>
             <Link
               href="/products"
+              hrefLang="en"
               aria-label="View our Products"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`block ${
@@ -160,6 +167,7 @@ export default function Header() {
             </Link>
             <Link
               href="/contact"
+              hrefLang="en"
               aria-label="Contact us"
               onClick={() => setIsMobileMenuOpen(false)}
               className={`block ${

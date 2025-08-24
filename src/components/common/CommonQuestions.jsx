@@ -20,7 +20,7 @@ export function CommonQuestions({ reasons, title1, title2, imgSrc }) {
                 className="flex items-start gap-3 fadeIn delay-75"
               >
                 <Image
-                  src="/images/check-icon.png"
+                  src="/images/check-iconaboutMissionAutosparePartsinPerinthamlmannaKeralaPandiSpares.webp"
                   alt="check icon"
                   width={24}
                   height={24}

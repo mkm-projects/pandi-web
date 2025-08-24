@@ -21,7 +21,7 @@ export default function AboutPage() {
         reasons={CHOOSE_AS_QUESTIONS}
         title1={"Why"}
         title2={"Choose Us?"}
-        imgSrc={"/images/about-engine-parts.webp"}
+        imgSrc={"/images/about-engine-partsAutosparePartsinPerinthamlmannaKeralaPandiSpares.webp"}
       />
     </MainLayout>
   );

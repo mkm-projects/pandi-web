@@ -10,7 +10,7 @@ export function MissionSection() {
         {/* Left Image */}
         <figure className="relative h-72 lg:h-[400px] w-full rounded-2xl overflow-hidden order-2 lg:order-1">
           <Image
-            src="/images/aboutMission.webp"
+            src="/images/aboutMissionAutosparePartsinPerinthamlmannaKeralaPandiSpares.webp"
             fill
             alt="High-quality engine spare part"
             className="object-cover lg:object-contain"

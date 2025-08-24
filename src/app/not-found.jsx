@@ -8,6 +8,7 @@ export default function NotFound() {
       <Link
         href="/"
         className="mt-5 px-6 py-2 bg-black text-white rounded-lg transition duration-300"
+        hrefLang="en"
       >
         Return Home
       </Link>

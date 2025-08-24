@@ -1,24 +1,21 @@
 import HeroSection from "@/components/HeroSection";
-import { AboutPage } from "./about/page";
-import { ProductPage } from "./product/page";
-import { BrandPage } from "./brand/page";
-// import { Button } from "@/components/ui/button";
+import { AboutSection } from "@/components/home/AboutSection";
+import { BrandSection } from "@/components/home/BrandSection";
+import ProductSection from "@/components/home/ProductSection";
+import MainLayout from "@/components/mainLayout";
+
+export const metadata = {
+  title: "Pandi Web — Automotive Spare Parts",
+  description: "OEM & aftermarket spare parts from trusted brands — fast delivery, competitive prices, and expert support to keep your vehicle running reliably."
+};
 
 export default function Home() {
   return (
-    <div className="grid">
-
+    <MainLayout>
       <HeroSection />
-      <AboutPage />
-      <ProductPage />
-      <BrandPage />
-      {/* <h2 className="text-primary">
-        {t('title')}
-      </h2>
-
-      <Button className={"bg-primary"}>
-        {t('description')}
-      </Button> */}
-    </div>
+      <AboutSection />
+      <ProductSection />
+      <BrandSection />
+    </MainLayout>
   );
 }

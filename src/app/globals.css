@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:is(.dark *));
 
 
@@ -39,6 +40,15 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --card-custom-1: hsla(0, 0%, 96%, 1);
+  --text-color: hsla(0, 0%, 30%, 1);
+
+  /* font sizes */
+  --container-8xl: 88rem;
+  --container-9xl: 96rem;
+  --container-10xl: 104rem;
+  --text-md: 1rem;
 }
 
 @theme inline {
@@ -81,6 +91,15 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
+  --color-card-custom-1: var(--card-custom-1);
+  --color-text-color: var(--text-color);
+
+  /* font sizes */
+  --container-8xl: var(--container-8xl);
+  --container-9xl: var(--container-9xl);
+  --container-10xl: var(--container-10xl);
+  --text-md: var(--text-md);
 }
 
 .dark {
@@ -117,6 +136,10 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -125,3 +148,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+/* animations */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+}
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.fadeIn.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+

@@ -1,66 +1,66 @@
 export const brandList = [
   {
     key: "bosch",
-    image: "/images/brand_bosch.png",
+    image: "/images/bosch_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "ngk",
-    image: "/images/brand_ngk.png",
+    image: "/images/ngk_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "mahle",
-    image: "/images/brand_mahle.png",
+    image: "/images/mahle_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "tvs",
-    image: "/images/brand_tvs.png",
+    image: "/images/tvs_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "uno",
-    image: "/images/brand_uno.png",
+    image: "/images/uno_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "exide",
-    image: "/images/brand_exide.png",
+    image: "/images/exide_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "bosch1",
-    image: "/images/brand_bosch.png",
+    image: "/images/bosch_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "ngk1",
-    image: "/images/brand_ngk.png",
+    image: "/images/ngk_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "mahle1",
-    image: "/images/brand_mahle.png",
+    image: "/images/mahle_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "tvs1",
-    image: "/images/brand_tvs.png",
+    image: "/images/tvs_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "uno1",
-    image: "/images/brand_uno.png",
+    image: "/images/uno_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "exide1",
-    image: "/images/brand_exide.png",
+    image: "/images/exide_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "bosch2",
-    image: "/images/brand_bosch.png",
+    image: "/images/bosch_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "ngk2",
-    image: "/images/brand_ngk.png",
+    image: "/images/ngk_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "mahle2",
-    image: "/images/brand_mahle.png",
+    image: "/images/mahle_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
   {
     key: "tvs2",
-    image: "/images/brand_tvs.png",
+    image: "/images/tvs_brandPartsAutoPartsinPerinthamlmannaKeralaPandiSpares.webp",
   },
 ];

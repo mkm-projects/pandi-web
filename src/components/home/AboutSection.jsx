@@ -53,17 +53,20 @@ export function AboutSection() {
           About <span className="text-primary">Us</span>
         </h2>
         <p className="text-gray-700 text-base md:text-xl leading-relaxed mb-6 fadeIn">
-          At Pandi Auto Spare in Malappuram, Kerala, we provide high-quality car
-          spare parts for all vehicles. Whether you’re a car owner, mechanic, or
-          retailer, we offer a wide range of genuine OEM and premium aftermarket
-          parts at competitive prices, ensuring reliable performance and
-          long-lasting quality.
+          At Pandi Auto Spare in Perinthalmanna, Malappuram, Kerala, we have
+          been trusted by customers since 1972 for delivering high-quality car
+          spare parts for all types of vehicles. Whether you are a car owner,
+          mechanic, or retailer, we offer a wide selection of genuine OEM parts
+          and premium aftermarket spares at competitive prices, ensuring
+          reliable performance and long-lasting durability.
         </p>
         <p className="text-gray-700 text-base md:text-xl leading-relaxed mb-8 fadeIn">
-          With a focus on genuine quality,and fast delivery, our goal is to keep
-          your vehicles running safely and smoothly.
+          With over five decades of experience, we are committed to authentic
+          quality, competitive pricing, and fast delivery, helping you keep your
+          vehicles safe, smooth, and road-ready. Our long-standing reputation
+          makes us the preferred destination for car spare parts in Kerala.
         </p>
-        <Link href="/about" hrefLang="en">
+        <Link href="/about" hrefLang="en" aria-label="Learn more about Pandi Auto Spare – Trusted car spare parts provider in Perinthalmanna, Malappuram">
           <button className="bg-primary text-white px-6 py-3 rounded-full hover:opacity-90 transition fadeIn">
             Read More
           </button>

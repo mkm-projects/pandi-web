@@ -10,37 +10,37 @@ export default function Header() {
   const [showNumber, setShowNumber] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // get current page path
   const path = usePathname();
 
   return (
     <header className="bg-white shadow-sm w-full sticky top-0 z-50" role="banner">
       <div className="mx-auto relative w-full px-4 sm:px-6 lg:px-14 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" hrefLang="en" aria-label="Go to Pandi Web homepage">
+        <Link
+          href="/"
+          hrefLang="en"
+          aria-label="Pandi Auto Spare – Home page for high-quality car spare parts in Perinthalmanna, Malappuram"
+        >
           <Image
             src="/images/PandiAutoPartsStoreLogo.webp"
-            alt="Pandi Web Logo - Home"
+            alt="Pandi Auto Spare Logo – Car Spare Parts Home"
             width={120}
             height={50}
             className="object-contain"
             priority
           />
-          <span className="sr-only">Pandi Web Homepage</span>
+          <span className="sr-only">Pandi Auto Spare Homepage</span>
         </Link>
 
         <div className="flex items-center gap-14">
           {/* Desktop Navigation */}
-          <nav
-            className="hidden lg:flex items-center space-x-8"
-            aria-label="Main navigation"
-          >
+          <nav className="hidden lg:flex items-center space-x-8" aria-label="Main navigation">
             <ul className="flex items-center space-x-8">
               <li>
                 <Link
                   href="/"
                   hrefLang="en"
-                  aria-label="Navigate to Home page"
+                  aria-label="Pandi Auto Spare Home – High-quality car spare parts in Perinthalmanna"
                   className={`${
                     path === "/" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
                   }`}
@@ -52,7 +52,7 @@ export default function Header() {
                 <Link
                   href="/about"
                   hrefLang="en"
-                  aria-label="Learn more About Us"
+                  aria-label="About Pandi Auto Spare – Trusted car spare parts provider in Malappuram"
                   className={`${
                     path === "/about" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
                   }`}
@@ -64,7 +64,7 @@ export default function Header() {
                 <Link
                   href="/products"
                   hrefLang="en"
-                  aria-label="View our Products"
+                  aria-label="View Pandi Auto Spare Products – OEM and aftermarket car parts"
                   className={`${
                     path === "/products" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
                   }`}
@@ -76,7 +76,7 @@ export default function Header() {
                 <Link
                   href="/contact"
                   hrefLang="en"
-                  aria-label="Contact us"
+                  aria-label="Contact Pandi Auto Spare – Get in touch for car spare parts in Kerala"
                   className={`${
                     path === "/contact" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
                   }`}
@@ -91,14 +91,13 @@ export default function Header() {
           <div className="flex items-center gap-2 md:gap-4">
             <button
               type="button"
-              aria-label="Show phone number"
+              aria-label="Call Pandi Auto Spare – High-quality car spare parts support"
               className={`bg-primary text-white px-2 sm:px-4 py-2 rounded-full flex items-center text-sm font-medium whitespace-nowrap cursor-pointer ${
                 showNumber ? "gap-2" : "gap-0.5"
               }`}
               onClick={() => setShowNumber((prev) => !prev)}
             >
               <Call size="18" color="#FFF" />
-
               <span
                 className={`sm:hidden overflow-hidden transition-all duration-300 ${
                   showNumber ? "max-w-[200px] opacity-100" : "max-w-0 opacity-0"
@@ -106,7 +105,6 @@ export default function Header() {
               >
                 +91 8606449640
               </span>
-
               <span className="hidden sm:block">+91 8606449640</span>
             </button>
 
@@ -114,7 +112,7 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              aria-label={isMobileMenuOpen ? "Close mobile menu – Pandi Auto Spare navigation" : "Open mobile menu – Pandi Auto Spare navigation"}
               className="lg:hidden p-2 rounded focus:outline-none cursor-pointer"
             >
               {isMobileMenuOpen ? (
@@ -135,44 +133,36 @@ export default function Header() {
             <Link
               href="/"
               hrefLang="en"
-              aria-label="Navigate to Home page"
+              aria-label="Pandi Auto Spare Home – High-quality car spare parts in Perinthalmanna"
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`block ${
-                path === "/" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
-              } mt-3`}
+              className={`block ${path === "/" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"} mt-3`}
             >
               Home
             </Link>
             <Link
               href="/about"
               hrefLang="en"
-              aria-label="Learn more About Us"
+              aria-label="About Pandi Auto Spare – Trusted car spare parts provider in Malappuram"
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`block ${
-                path === "/about" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
-              }`}
+              className={`block ${path === "/about" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"}`}
             >
               About Us
             </Link>
             <Link
               href="/products"
               hrefLang="en"
-              aria-label="View our Products"
+              aria-label="View Pandi Auto Spare Products – OEM and aftermarket car parts"
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`block ${
-                path === "/products" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
-              }`}
+              className={`block ${path === "/products" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"}`}
             >
               Products
             </Link>
             <Link
               href="/contact"
               hrefLang="en"
-              aria-label="Contact us"
+              aria-label="Contact Pandi Auto Spare – Get in touch for car spare parts in Kerala"
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`block ${
-                path === "/contact" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"
-              }`}
+              className={`block ${path === "/contact" ? "text-primary font-semibold" : "text-gray-700 hover:text-primary"}`}
             >
               Contact
             </Link>

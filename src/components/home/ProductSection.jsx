@@ -15,7 +15,7 @@ export default function ProductSection() {
           Explore Our <span className="text-primary">Products</span>
         </h2>
         <p className="text-gray-700 text-base md:text-xl max-w-2xl mt-6 fadeIn">
-          Browse a wide range of high-quality spare parts in Malappuram, Kerala.
+          Browse a wide range of high-quality spare parts in Perinthalmanna Malappuram Kerala.
           Whether you’re upgrading, replacing, or repairing, we have the right
           OEM and aftermarket parts to keep your vehicle running reliably.
         </p>

@@ -83,7 +83,7 @@ function SocialLinks() {
     {
       icon: (
         <Image
-          src={"/images/whatsapp_AutosparePartsinPerinthamlmannaKeralaPandiSpares"}
+          src={"/images/whatsapp_AutosparePartsinPerinthamlmannaKeralaPandiSpares.webp"}
           height={28}
           width={28}
           alt="whatsapp_logo"

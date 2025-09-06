@@ -67,8 +67,10 @@ export function AboutSection() {
           makes us the preferred destination for car spare parts in Kerala.
         </p>
         <Link href="/about" hrefLang="en" aria-label="Learn more about Pandi Auto Spare – Trusted car spare parts provider in Perinthalmanna, Malappuram">
-          <button className="bg-primary text-white px-6 py-3 rounded-full hover:opacity-90 transition fadeIn">
-            Read More
+          <button className="bg-primary text-white px-6 py-3 rounded-full 
+             hover:bg-primary/90 hover:scale-101 hover:shadow-lg 
+             transition-all duration-300 ease-in-out fadeIn cursor-pointer">
+            Learn More
           </button>
         </Link>
       </div>

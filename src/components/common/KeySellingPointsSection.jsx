@@ -29,7 +29,7 @@ function KeySellingPointsSection() {
           <img
             src="/images/TopBrandsInPandiSpares.webp"
             alt="Top brands icon"
-            className="w-10 h-10 mb-3"
+            className="w-10 h-10 mb-3 object-contain"
           />
           <p className="text-sm">Top Brands</p>
         </li>

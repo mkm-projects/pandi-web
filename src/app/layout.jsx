@@ -11,7 +11,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://pandi-web.vercel.app"),
+  metadataBase: new URL("https://pandispares.com"),
   title: {
     default: "High Quality Spare Parts in Perinthalmanna Malappuram",
   },
@@ -26,19 +26,19 @@ export const metadata = {
     "Malappuram car parts",
     "trusted car parts Kerala",
   ],
-  authors: [{ name: "Pandi Auto Spare" }],
+  authors: [{ name: "Pandi Auto Spares" }],
   openGraph: {
     title: "High Quality Spare Parts in Perinthalmanna Malappuram",
     description:
       "High Quality Spare Parts Perinthalmanna Malappuram. Trusted brands, fast delivery, competitive prices, and expert support to keep your vehicle running reliably.",
-    url: "https://pandi-web.vercel.app",
+    url: "https://pandispares.com",
     siteName: "Pandi Web",
     images: [
       {
-        url: "https://pandi-web.vercel.app/images/PandiMetadataImage.webp",
+        url: "https://pandispares.com/images/PandiMetadataImage.webp",
         width: 1200,
         height: 630,
-        alt: "Pandi Auto Spare Parts Logo",
+        alt: "Pandi Auto Spares Parts Logo",
       },
     ],
     locale: "en_US",
@@ -49,7 +49,7 @@ export const metadata = {
     title: "High Quality Spare Parts in Perinthalmanna Malappuram",
     description:
       "Trusted OEM & aftermarket car spare parts in Perinthalmanna Malappuram",
-    images: ["https://pandi-web.vercel.app/images/PandiMetadataImage.webp"],
+    images: ["https://pandispares.com/images/PandiMetadataImage.webp"],
     site: "@pandiweb",
   },
   robots: {
@@ -64,10 +64,10 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: "https://pandi-web.vercel.app",
+    canonical: "https://pandispares.com",
     languages: {
-      "x-default": "https://pandi-web.vercel.app/",
-      en: "https://pandi-web.vercel.app/",
+      "x-default": "https://pandispares.com",
+      en: "https://pandispares.com",
     },
   },
 };
@@ -79,7 +79,7 @@ export default async function RootLayout({ children }) {
         {/* Google Analytics GA4 */}
         <Script
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-02NY6LD06P"
         />
         <Script
           id="google-analytics"
@@ -89,7 +89,7 @@ export default async function RootLayout({ children }) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX', { page_path: window.location.pathname });
+              gtag('config', 'G-02NY6LD06P', { page_path: window.location.pathname });
             `,
           }}
         />
@@ -141,13 +141,13 @@ export default async function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "AutoPartsStore",
-              "name": "Pandi Auto Spare",
+              "name": "Pandi Auto Spares",
               "image": "/images/PandiMetadataImage.webp",
-              "url": "https://pandi-web.vercel.app",
-              "telephone": "+91 8606449640",
+              "url": "https://pandispares.com",
+              "telephone": "+91 9349101237",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Your Street, Perinthalmanna",
+                "streetAddress": "calicut road, Perinthalmanna",
                 "addressLocality": "Malappuram",
                 "addressRegion": "Kerala",
                 "postalCode": "676509",
@@ -155,8 +155,8 @@ export default async function RootLayout({ children }) {
               },
               "openingHours": "Mo-Sa 09:00-18:00",
               "sameAs": [
-                "https://www.facebook.com/pandiweb",
-                "https://www.instagram.com/pandiweb"
+                "https://www.facebook.com/pandiautosparespas",
+                "https://www.instagram.com/pandiautosparespas"
               ]
             }),
           }}

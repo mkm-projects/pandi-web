@@ -103,9 +103,9 @@ export default function Header() {
                   showNumber ? "max-w-[200px] opacity-100" : "max-w-0 opacity-0"
                 }`}
               >
-                +91 8606449640
+                +91 9349101237
               </span>
-              <span className="hidden sm:block">+91 8606449640</span>
+              <span className="hidden sm:block">+91 9349101237</span>
             </button>
 
             {/* Mobile Menu Button */}

@@ -10,7 +10,7 @@ export function AboutSection() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => entry.isIntersecting && setIsVisible(true),
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
@@ -53,7 +53,7 @@ export function AboutSection() {
           About <span className="text-primary">Us</span>
         </h2>
         <p className="text-gray-700 text-base md:text-xl leading-relaxed mb-6 fadeIn">
-          At Pandi Auto Spare in Perinthalmanna, Malappuram, Kerala, we have
+          At Pandi Auto Spares in Perinthalmanna, Malappuram, Kerala, we have
           been trusted by customers since 1972 for delivering high-quality car
           spare parts for all types of vehicles. Whether you are a car owner,
           mechanic, or retailer, we offer a wide selection of genuine OEM parts

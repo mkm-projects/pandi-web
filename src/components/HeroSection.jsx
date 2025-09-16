@@ -16,7 +16,7 @@ export default function HeroSection() {
           {/* Discover a wide selection of OEM and aftermarket parts for all vehicle
           types. Genuine quality, competitive prices, and reliable performance
           guaranteed. Shop with confidence and keep your ride running smoothly. */}
-          At Pandi Auto Spare, we have been trusted by customers since 1972 for
+          At Pandi Auto Spares, we have been trusted by customers since 1972 for
           delivering high-quality car spare parts in Perinthalmanna, Malappuram,
           Kerala. Whether you are a car owner, mechanic, or retailer, we offer a
           wide selection of genuine OEM parts and premium aftermarket car spares

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const metadata = {
   title: "Contact Pandi Web — Orders & Support",
-  description: "Contact Pandi Web for orders and customer support. Call +91 8606449640 or email pandispare@gmail.com. Support hours Mon–Sat 9:00 AM–7:00 PM."
+  description: "Contact Pandi Web for orders and customer support. Call +91 9349101237 or email pandiautospares@gmail.com. Support hours Mon–Sat 9:00 AM–7:00 PM."
 };
 
 export default function ContactPage() {
@@ -35,7 +35,7 @@ export default function ContactPage() {
           <div className="flex items-center gap-3 text-lg text-gray-800">
             <PhoneIcon size="28" className="text-secondary" />
             <span className="font-normal text-base md:text-xl text-text-color">
-              +91 8606449640
+              +91 9349101237
             </span>
           </div>
 
@@ -43,7 +43,7 @@ export default function ContactPage() {
           <div className="flex items-center gap-3 text-lg text-gray-800">
             <MailIcon size="28" className="text-secondary" />
             <span className="font-normal text-base md:text-xl text-text-color">
-              pandispare@gmail.com
+             pandiautospares@gmail.com
             </span>
           </div>
 
@@ -89,8 +89,8 @@ function SocialLinks() {
           alt="whatsapp_logo"
         />
       ),
-      text: "+91 8606449640",
-      url: "https://wa.me/918606449640",
+      text: "+91 9349101237",
+      url: "https://wa.me/919349101237",
     },
     {
       icon: (

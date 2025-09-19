@@ -77,7 +77,7 @@ export default function Footer() {
                 <SocialIcon
                   icon={Whatsapp}
                   hoverColor="hover:text-green-400"
-                  href="https://wa.me/918606449640"
+                  href="https://wa.me/919349101237"
                   hrefLang="en"
                   label="WhatsApp – Chat with Pandi Auto Spares"
                 />

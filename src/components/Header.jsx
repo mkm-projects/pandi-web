@@ -12,6 +12,16 @@ export default function Header() {
 
   const path = usePathname();
 
+  function call(){
+    if(showNumber){
+      // alert("hai")
+      window.location.href = "tel:+919349101237"
+      setShowNumber(false)
+    }else{
+      setShowNumber(true)
+    }
+  }
+
   return (
     <header className="bg-white shadow-sm w-full sticky top-0 z-50" role="banner">
       <div className="mx-auto relative w-full px-4 sm:px-6 lg:px-14 py-4 flex items-center justify-between">
@@ -95,7 +105,7 @@ export default function Header() {
               className={`bg-primary text-white px-2 sm:px-4 py-2 rounded-full flex items-center text-sm font-medium whitespace-nowrap cursor-pointer ${
                 showNumber ? "gap-2" : "gap-0.5"
               }`}
-              onClick={() => setShowNumber((prev) => !prev)}
+              onClick={() => call()}
             >
               <Call size="18" color="#FFF" />
               <span

@@ -34,7 +34,7 @@ export default function Header() {
           <Image
             src="/images/PandiAutoPartsStoreLogo.webp"
             alt="Pandi Auto Spare Logo – Car Spare Parts Home"
-            width={120}
+            width={130}
             height={50}
             className="object-contain"
             priority
